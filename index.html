@@ -1,23 +1,106 @@
 ---
-layout: default
+layout: bootstrap
+id: index
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div id="get-started-form">
+	<div class="container">
+		<form class="form-inline" id="new-order">
+			<input type="hidden" name="id" id="order-id" value="1365422020">
+			<div class="form-group">
+				<input type="text" class="form-control" id="name" placeholder="Name">
+			</div>
+			<div class="form-group">
+				<input type="email" class="form-control" id="email" placeholder="Email">
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary active">
+					Get Started! <em>$299<span> / one-time fee</span></em>
+				</button>
+			</div>
+		</form>
+	</div>
 </div>
+
+<!-- Hero Banner
+================================================== -->
+<section id="get-started">
+	<div class="item background-cover" style="background-image:url('/assets/img/bg-featuredapp1.jpg')">
+		<div class="container">
+			<div class="row">
+				<h1>Start your social network today!</h1>
+				<h2>with PHPfox Neutron</h2>
+			</div>
+		</div>
+
+		<div class="overlay-bg"></div>
+	</div>
+</section>
+
+<!-- About Section
+================================================== -->
+<section id="intro" class="text-center">
+
+	<div class="container">
+		<div class="row">
+			<div class="page-header">
+				<h2>PHPfox helps create your custom social network</h2>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4 text-center overlay-text icons">
+				<div class="icon-wrapper">
+					<i class="fa fa-cloud icon-large"></i>
+				</div>
+				<h3>Businesses</h3>
+				<p>We include a mobile friendly module for your community.</p>
+			</div>
+			<div class="col-sm-4 text-center overlay-text icons">
+				<div class="icon-wrapper">
+					<i class="fa fa-rocket icon-large"></i>
+				</div>
+				<h3>Startups</h3>
+				<p>Present your community to your members as your own brand with no "powered by" links.</p>
+			</div>
+			<div class="col-sm-4 text-center overlay-text icons">
+				<div class="icon-wrapper">
+					<i class="fa fa-lightbulb-o icon-large"></i>
+				</div>
+				<h3>Organizations</h3>
+				<p>Our PHP source code has no encryption allowing you to create a unique community.</p>
+			</div>
+		</div><!-- /.row -->
+	</div>
+
+
+</section>
+
+{% include index/features.html %}
+
+<section id="demo">
+	<div class="container">
+		<div class="page-header text-center">
+			<h1>Demo</h1>
+			<h2>Here's a sneak peek</h2>
+		</div>
+	</div>
+</section>
+
+
+<section id="faq">
+	<div class="container">
+		<div class="page-header text-center">
+			<h1>FAQ</h1>
+			<h2>Do you have Questions?</h2>
+		</div>
+		<div class="row">
+
+			<div class="faq" id="faq">
+				{% include faq.html %}
+			</div>
+
+		</div>
+	</div>
+
+</section>
