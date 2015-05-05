@@ -11,7 +11,7 @@
 		<meta name="keywords" content="{{ page.keywords }}">
 		<link rel="shortcut icon" href="ico/favicon.png">
 
-		<title>PHPfox</title>
+		<title>{{ page.title }}</title>
 
 		<link href="/assets/css/bootstrap.css" rel="stylesheet">
 		<link href="/assets/css/theme.css" rel="stylesheet">
@@ -27,8 +27,11 @@
 		<![endif]-->
 
 		<script src="/assets/js/modernizr.custom.js"></script>
+		{% if page.custom_css %}
+			<link href="/assets/css/{{ page.custom_css }}" rel="stylesheet">
+		{% endif %}
 	</head>
-	<body id="page-{{ page.id }}" class="{% if page.id != "index" %}not-index-page in-fixed-mode {% endif %}{{ page.class }}">
+	<body id="page-{{ page.id }}" class="{% if page.id != "index" %}not-index-page in-fixed-mode {% endif %}{{ page.class }} base-site">
 
 		<div class="preloader">
 			<div class="spinner">
@@ -59,7 +62,9 @@
 					{% if page.id != "index" %}
 						<nav class="navbar-collapse pull-right">
 							<ul class="nav navbar-nav">
-								<li><a href="/">Login</a></li>
+								{% if page.nav_menu %}
+								{{ page.nav_menu }}
+								{% endif %}
 								<li><a href="/" class="what-is-phpfox">What is PHPfox?</a></li>
 							</ul>
 						</nav>
@@ -95,32 +100,16 @@
 
 			<div class="container">
 
-
 				<div class="footer-nav row">
 					<div class="col-lg-12">
 
 						<div class="col-sm-3 col-md-3">
-							<div class="footer-logo">
-								<div class="social">
-									<a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-									<a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-									<a href="#" target="_blank"><i class="fa fa-github"></i></a>
-								</div>
-
-								<p class="muted">© PHPfox</p>
-								<div class="terms">
-									<a href="/terms/privacy/">Privacy</a>
-									<a href="/terms/cookies/">Cookies</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-3 col-md-3">
 							<h3>Overview</h3>
 							<ul class="list-unstyled">
-								<li><a href="#">Intro</a></li>
-								<li><a href="#">Features</a></li>
-								<li><a href="#">Demo</a></li>
+								<li><a href="/#intro">Intro</a></li>
+								<li><a href="/#features">Features</a></li>
+								<li><a href="/#demo">Demo</a></li>
+								<li><a href="/#faq">FAQ</a></li>
 							</ul>
 						</div>
 
@@ -133,24 +122,32 @@
 							</ul>
 						</div>
 
-
-						<!--
-						<div class="col-sm-3 col-md-3">
-							<h3>Company</h3>
-							<ul class="list-unstyled">
-								<li><a href="#">About Us</a></li>
-								<li><a href="#">Blog</a></li>
-							</ul>
-						</div>
-						-->
 						<div class="col-sm-3 col-md-3">
 							<h3>Resources</h3>
 							<ul class="list-unstyled">
 								<li><a href="http://support.phpfox.com/hc/en-us">Product Help</a></li>
 								<li><a href="http://community.phpfox.com/">Community</a></li>
-								<li><a href="#">Company Blog</a></li>
+								<li><a href="/developers/">Developers</a></li>
+								<li><a href="http://blog.phpfox.com/">Company Blog</a></li>
 							</ul>
 						</div>
+
+
+						<div class="col-sm-3 col-md-3 social text-center">
+							<a href="#" target="_blank" class="s-twitter"><i class="fa fa-twitter"></i></a>
+							<a href="#" target="_blank" class="s-facebook"><i class="fa fa-facebook"></i></a>
+							<a href="#" target="_blank" class="s-github"><i class="fa fa-github"></i></a>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="footer-logo">
+					<p class="muted">© PHPfox</p>
+					<div class="terms">
+						<a href="/terms/privacy/">Privacy</a>
+						<span>&middot;</span>
+						<a href="/terms/cookies/">Cookies</a>
 					</div>
 				</div>
 
@@ -176,5 +173,13 @@
 			});
 		</script>
 
-	</body>
+		<!--
+	<script>
+		var resource = document.createElement('script');
+		resource.src = "http://phpfox.myomnistar.com/track.js";
+		var script = document.getElementsByTagName('script')[0];
+		script.parentNode.insertBefore(resource, script);
+	</script>
+	-->
+</body>
 </html>

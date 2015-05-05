@@ -13,6 +13,17 @@ $(document).ready(function() {
   owlCarousel();
   magnificPopup();
 
+	$('.image-load:not(.built)').each(function() {
+		var t = $(this),
+			src = t.data('src'),
+			img = new Image();
+
+		img.onload = function() {
+			t.css('background-image', 'url(' + src + ')');
+		};
+		img.src = src;
+	});
+
 	$('#new-order').submit(function() {
 
 		window.location.href = 'http://shop.phpfox.com/pages/checkout?id=' + $('#order-id').val() + '&email=' + encodeURIComponent($('#email').val()) + '&name=' + encodeURIComponent($('#name').val());
@@ -86,7 +97,7 @@ function fullScreenContainer() {
   var screenHeight = $(window).height() + "px";
 	console.log('Height:' + screenHeight);
 
-	$('section').css('min-height', screenHeight);
+	$('section#get-started').css('min-height', screenHeight);
 	/*
   $("#get-started .item").css({
     // width: screenWidth,
@@ -105,7 +116,7 @@ function fullScreenContainer() {
       
     // Set Slides to new Screen Dimensions
 
-	  $('section').css('min-height', screenHeight);
+	  $('section#get-started').css('min-height', screenHeight);
 	  /*
     $("#get-started .item").css({
       // width: screenWidth,
@@ -178,6 +189,21 @@ function magnificPopup() {
     image: {
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     },
+	  zoom: {
+		  enabled: true, // By default it's false, so don't forget to enable it
+
+		  duration: 300, // duration of the effect, in milliseconds
+		  easing: 'ease-in-out', // CSS transition easing function
+
+		  // The "opener" function should return the element from which popup will be zoomed in
+		  // and to which popup will be scaled down
+		  // By defailt it looks for an image tag:
+		  opener: function(openerElement) {
+			  // openerElement is the element on which popup was initialized, in this case its <a> tag
+			  // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+			  return openerElement.is('img') ? openerElement : openerElement.find('img');
+		  }
+	  },
     callbacks: {
       close: function() {
         $('.portfolio-item figure figcaption').removeClass('active');
@@ -301,7 +327,28 @@ function onePageScroll() {
           //I get fired when you enter a section and I pass the list item of the section
       }
   });
-}
+
+	$('.build-in-features section:first-of-type').show();
+	$('.build-in-menu a').click(function() {
+		var t = $(this),
+			id = t.attr('href').replace('#', '');
+
+		window.location.hash = id;
+
+		$('.build-in-menu a.active').removeClass('active');
+		t.addClass('active');
+		$('.build-in-features section').attr('style', '');
+		$('section#' + id).show().css({
+			'position': 'absolute',
+			'left': '0px',
+			'top': ($(window).scrollTop() + 20) + 'px'
+		});
+
+		// console.log(id);
+
+		return false;
+	});
+};
 
 if ($('#page-index').length) {
 	var dropForm = false;

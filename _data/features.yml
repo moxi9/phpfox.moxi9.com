@@ -1,0 +1,615 @@
+- h1: Pages & Groups
+  url: pages
+  features:
+  - h1: Admin Approval
+    p: You or your staff can approve apps before they go public.
+  - h1: Likes
+    p: We keep your users active by giving them the ability to easily Like an app.
+  - h1: Page or Group
+    p: You define categories from the AdminCP. These categories control if a Page is to be considered a conventional Page, where users "Like" the page or if it is a Group; where users join the Group. We have fully integrated Groups and Pages into one highly powerful fully featured module.
+  - h1: Activity Feed
+    p: Each Page/Group comes with its very own Activity Feed allowing users to write on the wall, upload photos and attach links.
+  - h1: Own Community
+    p: We provide tons of features with Pages and each page includes the ability for your users to create events, discussions, upload songs, photos and videos.
+  - h1: Post as Page
+    p: When you are an Admin of a Page you can post as that page or as yourself on the activity wall. Additionally you can login as a Page and fully interact with your inner community as the Page itself.
+  - h1: Landing Page
+    p: You can control the default landing page of your page. It can be set to the Wall, Info, Events, Discussions, Music, Photos or Videos.
+  - h1: Advanced Permissions
+    p: As an Admin of a Page you have full control of who can add or view items on your Page. This is from sharing an event to viewing a discussion.
+  - h1: Invite Friends
+    p: Page Admins can mass invite their friends to check out their page.
+  - h1: Vanity URL
+    p: Each page can have a unique vanity URL on your site giving a more personal "profile" feel.
+  - h1: Multiple Admins
+    p: Pages can have multiple admins. Easily add more admins while you manage your page.
+  - h1: Widgets
+    p: Each page has support for Widgets. This is the ability to create custom sub-sections to placing blocks on the landing page. Handy for ad campaigns or for showing a new product.
+  - h1: Group Registration
+    p: You can setup your group to allow anyone to register. Additionally you can set it to where you have to approve users before they are a member or only allow users that have been invited by admins to join the group.
+
+- h1: Activity Feed
+  url: activity-feed
+  features:
+  - h1: Extendable
+    p: Activity feeds by default can be found on a users dashboard and their own profile. Additionally Pages and Events have their own activity feed. This allows 3rd party products to easily integrate their product with our activity feed.
+  - h1: Commenting on Feeds
+    p: On each activity feed your members can comment and discuss what they liked about the item on the spot.
+  - h1: Quick Share
+    p: By default we provide the ability for your users to share a status update, photos, links, polls, blogs, songs and videos direct from the activity feed.
+  - h1: Like or Unlike Feeds
+    p: If enabled by Admins certain feeds can be liked or unliked. Once a feed is liked the owner of that feed is notified so they can keep track of who likes their posts.
+  - h1: Public or Friends Feeds
+    p: Admins can decide if the activity added to the live feeds is for everyone to see or just for the person and their friends.
+  - h1: Privacy Control
+    p: Similar to when adding items to the site you can control the privacy of your activity feed entry. Learn more about privacy control here.
+  - h1: Share on Facebook/Twitter
+    p: You can easily share your posts on Facebook and Twitter. You only need to connect to their site once and after that its just a click away.
+  - h1: Auto Load
+    p: We automatically load more feeds for your users without having them click on a link to view more feeds. You can control direct from the AdminCP how many times we should auto load feeds for your users.
+
+- h1: Privacy
+  url: item-privacy
+  features:
+  - h1: Invite Only
+    p: You can transform your community into an "Invite Only" social network.
+  - h1: Full Control of Items
+    p: Users can control who can view an item by setting the privacy of the item to either "Everyone, Friends, Friends of Friends, Only Me or Custom".
+  - h1: Control Comments
+    p: Users can control who can comment on the items they have posted. They can set the privacy to "Everyone, Friends, Friends of Friends or Only Me".
+  - h1: Custom Lists
+    p: Custom friends lists can be used to control exactly who can view an item you posted on the community.
+  - h1: Friends Only Community
+    p: By enabling our "Friends Only" community setting this will only show items (eg. blogs, photos, polls etc...) posted by your friends.
+
+- h1: CMS
+  url: content-management-system
+  features:
+  - h1: Drag & Drop New Blocks
+    p: You can now easily drag and drop a new block anywhere on your site. You will see the output of the block right away making it easier to manage blocks on your community.
+  - h1: Easy Management
+    p: Our CMS management is located in your Admin Control Panel and is split up into 3 types of management, which include Menus, Blocks and Pages.
+  - h1: Easily Move Blocks
+    p: We give you the option to easily drag and drop blocks direct from your AdminCP or you can use our DnD Mode, which allows you to drag and drop blocks anywhere on the site. Making it much easier to create a unique look for your community.
+  - h1: HTML & PHP Support for Blocks
+    p: Blocks can connect to PHP files on your server, which is how most of our blocks are built; however we also provide you the easy method of creating a block direct from your Admin Control Panel and you can simply use HTML or even PHP to create your very own block and place it anywhere on the site.
+  - h1: Privacy Control
+    p: Each Block, Menu and Page has privacy settings so you can control which user group can view the specific block, menu or page.
+  - h1: Menu Placements
+    p: Menus can be placed in several locations. You can place it in one of the 5 default main locations we provide. For each menu you add you can add child menus to that parent menu. You can also add menus to specific sections (eg. Just for blogs or videos), which would turn out to be a sub-menu. You can also order the positioning of menus so you can specify which menu should show up first and/or last.
+  - h1: Custom Pages
+    p: Creating a new page for your site shouldn't be hard and with PHPfox it isn't. Our page editor allows you to create pages direct from your Admin Control Panel. It gives you the power to create a custom SEO url and includes the ability to include your own meta keywords and description. You can attach a menu to your page so your users can easily access it. The page also supports PHP, BBCode and our internal HTML template code.
+
+- h1: Monetize
+  url: monetize
+  features:
+  - h1: Subscriptions
+    p: With over 330 ways (and growing) to control what a user can or can't do on your site you can easily create subscription plans and charge your users to upgrade in order to use certain features. Learn more
+  - h1: Payment Gateways API
+    p: We have included with our product support for both PayPal and 2checkout giving you the best of what both companies can provide for online payments.
+  - h1: Ad Campaigns
+    p: You can monetize your social network with our advanced ad campaigns that gives you full control to who can view each specific ad based on a users location, gender and even their age group. Learn more
+  - h1: User Based Ads
+    p: Your users can easily create ads using our advanced ad designer and you get full control how much ads cost based on up to 10 different locations on your site. Learn more
+  - h1: Sell Marketplace Listings
+    p: Your users can easily sell items on your marketplace and payments go directly to their PayPal or 2checkout account.
+  - h1: Sponsor Items
+    p: If your users have an image or maybe a marketplace listing they want to be sure all your members see they can sponsor items on your site. You have full control how much it costs to sponsor an item.
+
+- h1: Theme Management
+  url: theme-management
+  features:
+  - h1: Full Control Direct from AdminCP
+    p: You can edit the entire look of your social networking community direct from the comfort of your Admin Control Panel. This includes changing the logo, editing HTML templates and changing the CSS of your site.    You can also edit files from your favorite text editor or IDE. We simply give Admins to option to edit these files direct from their AdminCP if they want too.
+  - h1: Themes & Styles
+    p: PHPfox has support for both Themes and Styles. A Theme control the basic layout and structure of your site. Themes are mainly made up off HTML template files. Each theme has a few controlling template files and with just these few files you could change the entire look off your site to be a very unique social networking community.    Each Theme can have as many Styles. Styles control the colors, fonts, font sizes; basically the CSS and icons for your site. Since each Theme can have many Styles you can have many different color schemes with the one look.
+  - h1: No Overwrites
+    p: Since you can make changes to your theme and styles direct from the AdminCP you will never have to worry about upgrading to a new version of ours as we never overwrite your changes. We only overwrite our own files on the server but never your changes.
+  - h1: Import/Export Themes & Styles
+    p: Importing and exporting themes or styles is just a click away. To export a style or theme all you need to do is click the export link and you are on your way to receive a ZIP archive of your entire Theme or Style; which can be saved or released to others for free or for a fee.    Importing a theme or style requires uploading the theme to your server and then clicking the "Install" link from the theme manager.
+  - h1: Create Your Own Theme or Style
+    p: You can create your very own theme or style direct from our theme manager. By creating your own style you can make all the changes you want and keep our default theme intact.
+  - h1: Parent Support
+    p: Each theme or style has the ability to have a parent theme. What this does is make it easy on designers to only edit the files they need to change. For example using our default theme and style as a parent you could create a new theme with a new style by just editing 2 files. With just these 2 files you could give your site an entirely new look.
+  - h1: Create New CSS or HTML File
+    p: You can create a brand new CSS or HTML file direct from the AdminCP and connect these files to a new page you could be working on.
+  - h1: Change Logo
+    p: For each of your themes you can easily change the logo direct from your AdminCP. We also provide the option to automatically resize a logo for you so it perfectly fits on your site.
+
+- h1: Administration
+  url: administration
+  features:
+  - h1: Manage System Settings
+    p: We provide over 340 system settings that give you control over how you want your community to work.
+  - h1: System Overview
+    p: Our system overview provides vital information about your server and the state it is in.
+  - h1: IP Address Search
+    p: Using our IP address search tool you can find out what the user with the specific IP address has been up to on your site.
+  - h1: Overall Maintenance
+    p: We provide several tools to help you maintain your website. These tools include...    Cache Manager  Reparser  Remove Duplicate Entries  Update Site Counters  
+  - h1: Ban Filters
+    p: We provide a very powerful ban filter that allows you to...    ban user names upon registration  ban emails upon registration  ban display name upon registration  ban IP addresses  filter naughty words    We also include the ability to use a wild card (*) filter, which allows you to easily ban an IP range for example...    192.168.*  
+  - h1: Country Manager
+    p: You can easily manage countries by using our Country Manager. Each country can have its own set of states or provinces and you can easily import new countries from a text file.
+  - h1: Who's Online
+    p: From your AdminCP you can view all the activity on your site including those from non-members and search bots.
+  - h1: SQL Tools
+    p: We provide powerful SQL tools that lets you optimize, repair or backup your database direct from the AdminCP.
+  - h1: User Groups
+    p: When using a feature on the site it is usually tied into a user group, which in return gives you the control with what each user group can do; from things like uploading an image or writing a blog to viewing a secret group direct from the Admin Control Panel. With well over 330 settings and growing this gives you the full power to control what each user can or can't do on your community.
+  - h1: Announcements
+    p: Admins can write announcements for all the members on the site to see from either their dashboard or by visiting the announcement section.
+  - h1: Newsletters
+    p: Your own staff may need to send out information to all your users or a specific user group and this can be done by sending out newsletters via emails or internal private messages.
+  - h1: Attachment Support
+    p: Several sections on the site like Blogs or Marketplace listings have support to attach items to it. You have full control with what users can attach to these items.
+
+- h1: Ad Campaigns
+  url: ad-campaigns
+  features:
+  - h1: Block Positioning
+    p: In addition to placing ads in 11 different locations you can also place an ad specifically on a block.
+  - h1: Disallow Controller
+    p: Some ads may not make sense on a specific page so we provided a feature where you can disallow ads based on that specific page.
+  - h1: HTML & Image Ads
+    p: For each of your ad campaigns you can either upload an image or add HTML code, which can include JavaScript.
+  - h1: Start & End Date
+    p: You can specify when an ad campaign starts and ends. You can also set the ad campaign to never end.
+  - h1: Control Total Views
+    p: You can control how many times an ad campaign can be viewed before it is automatically deactivated.
+  - h1: Control Total Clicks
+    p: You can control how many times an ad campaign be clicked before it is automatically deactivated.
+  - h1: Section Placement
+    p: You can place an ad campaign in a specific section so it only shows up there.
+  - h1: 11 Ad Positions
+    p: You can place your ad campaigns in 11 different positions that give you a wide range of ad size support.
+  - h1: Control over the Audience
+    p: For each ad campaign you can control who can view it and we give you the option to control what...    user groups  location (country)  gender  age group    can view it.
+  - h1: User Based Ads
+    p: Your users can easily create ads using our advanced ad designer and you get full control how much ads cost based on up to 10 different locations on your site.
+  - h1: Sponsor Items
+    p: If your users have an image or maybe a marketplace listing they want to be sure all your members see they can sponsor items on your site. You have full control how much it costs to sponsor an item.
+
+- h1: User Groups
+  url: user-group-management
+  features:
+  - h1: Create Custom User Groups
+    p: You can create as many custom user groups as you want where each user group has over 330 customizable settings, which control things like allowing a user to write a blog to the ability to add comments.
+  - h1: Icons & Styles
+    p: Each user group can have its own icon and HTML suffix/prefix to give it a unique and cool look.
+  - h1: Easy Management
+    p: With well over 330 user group settings and growing it is a lot to look over and control. Within your Admin Control Panel we have made it easy to edit these settings and grouped them into modules with AJAX capabilities for quick and swift editing.
+
+- h1: Invite
+  url: invite
+  features:
+  - h1: Send Invites via Emails
+    p: Your users can send out invites to their friends by adding their emails to the form.
+  - h1: Keep Track of Invites
+    p: Members can keep track of all of their friends that they have previously invited to see how many of them joined the site. Members can also see if their friends visited the site but chose not to register.
+  - h1: Automatic Friendships
+    p: If a member invites their friend and if that friend joins the site both of them are automatically friends on your community.
+
+- h1: Blogs
+  url: blogs
+  features:
+  - h1: Public Blog Categories
+    p: You can add as many public blog categories, which your users can select when they are writing their blog entries. Users can select more than one blog category to include with each of their blog entries.
+  - h1: Private Blog Categories
+    p: When your users write their blogs they can select public categories, however they can also create their own set of categories that belong personally to them and only show up on their profile.
+  - h1: Topics
+    p: Each blog can contain as many tags the creator adds. All these tags are added to a block on the blogs index page displaying what is the trending topics and will make it easier for your members to search.
+  - h1: Drafts
+    p: Users can save blogs as drafts and once they are ready they can publish their blog at anytime.
+  - h1: Top Bloggers
+    p: On the blogs section index page we list the top bloggers of the community.
+  - h1: Digg Integration
+    p: Each blog post has a Digg integration.
+  - h1: Social Sharing
+    p: Users can share each blog entry using our Social Sharing feature, which connects to sites like Facebook & Twitter. Learn more
+  - h1: Report a Blog
+    p: Each blog entry can be reported to the Admins by the community to help prevent SPAM and/or remove inappropriate material that is considered to breach the terms & conditions of the site.
+  - h1: Search Filter
+    p: Using our search filters your users can easily find blogs they are looking for.
+  - h1: RSS
+    p: RSS support is included in the blog section so your members can keep track of all the latest blogs added to the community.
+  - h1: Privacy Control
+    p: Users can control who can view and comment on their blog. Learn more about privacy control here.
+  - h1: Likes & Comments
+    p: We keep your users active by giving them the ability to easily Like or comment on an app.
+  - h1: Admin Approval
+    p: You or your staff can approve blogs before they go public.
+
+- h1: Photos
+  url: photos
+  features:
+  - h1: Multiple Photo Uploads
+    p: Your users can upload as many as 10 photos at a time. Admins can actually control the setting of how many uploads can take place at one time so you control the amount depending on your needs.
+  - h1: Photo Albums
+    p: Users can upload photos to the public gallery or keep their photos organized in their very own photo album.
+  - h1: Control Downloads
+    p: For each image users can control if other users have the rights to download their photos.
+  - h1: Topics
+    p: Each photo can contain as many tags the user adds. All these tags are added to a block on the photos index page displaying what is the trending topics and will make it easier for your members to search.
+  - h1: Mature Content Control
+    p: Certain images may me mature in nature and for these photos users can enable the option to identify that it is only for mature users. By default its anyone above 18, however Admins can control what age is considered to be mature.
+  - h1: Set as Profile Picture
+    p: You can easily set one of your photos as your main profile picture with a click of a button.
+  - h1: CSS Photo Cropping
+    p: Using our method of CSS photo cropping you can easily create a clean look for all your photo thumbnails.
+  - h1: Multiple Category Selection
+    p: Each photo uploaded can belong to one or more categories. Categories have no limit with how many child categories it can have.
+  - h1: Rate Photos
+    p: Users can rate photos that have been uploaded to the public gallery and has been allowed to be rated on by other users. Users can decide if a photo is allowed to be rated on while processing their images after they have been uploaded.
+  - h1: Photo Battles
+    p: Users can battle photos with each other that have been uploaded to the public gallery and has been allowed to be battled on by other users. Users can decide if a photo is allowed to be battled on while processing their images after they have been uploaded.
+  - h1: Search Filter
+    p: By using our search filter your users can easily find photos they are looking for.
+  - h1: Social Sharing
+    p: Users can share each photo using our Social Sharing feature, which connects to sites like Facebook & Twitter. Learn more
+  - h1: View All Available Sizes
+    p: Users are uploading a lot of photos online and sharing them with all of their friends and we make sure you users are happy by keeping the original size of the image they have uploaded and create many smaller sizes depending on their need when sharing the photo.
+  - h1: Rotate Photos
+    p: Users can rotate their photos 90 degrees to the left or right.
+  - h1: Photo Tagging
+    p: Users can tag their friends or themselves in their own or other photos.
+  - h1: Watermarking
+    p: To prevent photo theft one the the most effective ways is to watermark your images with your sites logo or sites name and we have support for both these options.
+  - h1: Featured Photos
+    p: Admins can feature photos, which are displayed within the photos sections index page and is refreshed using AJAX.
+  - h1: Hotlink Prevention
+    p: To prevent hotlinking where users add photos on other sites we have the ability to prevent them from doing this unless they are a member of your website and have the rights to view the photo (privacy protection).
+  - h1: Photo Theater Mode
+    p: Viewing photos has never been easier. By using our "Photo Theater Mode" users will be able to click on a photo and it will display the photo right on the spot so they don't lose their place on the site.
+  - h1: Report a Photo
+    p: Each photo can be reported to the Admins by the community to help prevent SPAM and/or remove inappropriate material that is considered to breach the terms & conditions of the site.
+  - h1: Approval System
+    p: Admins can enable our approval system where if enabled users will have their photos viewed by a site moderator before it can be viewed publicly. The moderators can then decide to either approve or deny the photo.
+  - h1: Likes & Comments
+    p: We keep your users active by giving them the ability to easily Like or comment on a photo.
+  - h1: Privacy Control
+    p: Users can control who can view and comment on their photos. Learn more about privacy control here.
+  - h1: Profile Photo Albums
+    p: Each user has a profile photo album, which stores all of their profile photos they have uploaded.
+
+- h1: Attachments
+  url: attachments
+  features:
+  - h1: Upload or Import Photos
+    p: You can either upload photos direct from your computer or import a photo from your photo gallery.
+  - h1: Attach a Link
+    p: Attaching links has never been easier. Simply paste a link you want to attach and we will try to find any useful information about the link such as if its a YouTube video and if it is automatically import the video for you.
+  - h1: Downloadable Files
+    p: You can control what files can be uploaded by your users direct from the AdminCP. Users can attach files so others can download it. These files can be from PDF's to ZIP archives.
+  - h1: Emoticons
+    p: Users can attach emoticons by simply selecting from a list that you as an Admin control from the AdminCP. You can easily add more emoticons or download free emoticon packages to built up your list.
+
+- h1: Forum
+  url: forum
+  features:
+  - h1: Unlimited Child Forums
+    p: Your forums can have an unlimited amount of child forums.
+  - h1: Thread Management
+    p: Admins and/or forum moderators can manage threads which include options to...    move threads  copy threads  delete threads  edit threads  stick/unstick threads  close threads  merge threads  
+  - h1: Thread Subscriptions
+    p: Users can subscribe/un-subscribe to their own threads or threads posted by other members. If subscribed to a thread the user will be notified once its been updated with a new post.
+  - h1: Social Sharing
+    p: Users can share threads using our Social Sharing feature, which connects to sites like Facebook & Twitter. Learn more
+  - h1: Report a Thread
+    p: Each thread can be reported to the Admins by the community to help prevent SPAM and/or remove inappropriate material that is considered to breach the terms & conditions of the site.
+  - h1: Quick Reply
+    p: When viewing a thread users can add their reply on the spot without the need to click on a link that leads to another page from where they can add their reply.
+  - h1: RSS
+    p: RSS support is included in the forum section so your members can keep track of all the latest threads added to the community.
+  - h1: Advanced Search Filter
+    p: Users can search for threads and posts using our advanced search filter. They can list their results as threads or as posts. Quick search bars are provided when browsing the forum for easy access.
+  - h1: Forum Statistics
+    p: Your forum includes a general statistics block for your members.
+  - h1: Powerful Moderator Manager
+    p: Each forum can have its own set of moderators and we provide a powerful tool to find and grant users the power to moderate a forum. You can also control the moderation power of a specific user for a specific forum.
+  - h1: Admin Approval
+    p: You or your staff can approve threads before they go public.
+  - h1: Likes
+    p: We keep your users active by giving them the ability to easily Like posts.
+  - h1: Easy Moderation
+    p: Staff can easily moderated threads and forum posts by selecting multiple items at a time to perform certain tasks.
+  - h1: Polls
+    p: Each thread can have its own poll.
+
+- h1: Polls
+  url: polls
+  features:
+  - h1: Likes & Comments
+    p: We keep your users active by giving them the ability to easily Like or comment on a poll.
+  - h1: Multiple Answers
+    p: Users can control how many answers each of their poll's can have. They can also drag & drop each question to order them the way they want it to show up when other users answer their poll.
+  - h1: Randomize Answers
+    p: Users can order answers for their polls, however if they want to randomize the answers each time a person views the poll they can enable this option on a per poll basis.
+  - h1: Include Photos with Polls
+    p: For each poll that is created your users can attach an image.
+  - h1: Design your Poll
+    p: Your users can design each of their polls using our advanced design tool that provides a color picker, which has an array of colors.
+  - h1: View Results
+    p: Once a user has voted on a poll they can view the results of the poll, which includes a list of who casted a vote.
+  - h1: Report a Poll
+    p: Polls can be reported to the Admins by the community to help prevent SPAM and/or remove inappropriate material that is considered to breach the terms & conditions of the site.
+  - h1: Approval System
+    p: Admins can enable our approval system where if enabled users will have their polls viewed by a site moderator before it can be viewed publicly. The moderators can then decide to either approve or deny the poll.
+  - h1: Privacy Control
+    p: Users can control who can view and comment on their polls. Learn more about privacy control here.
+  - h1: Social Sharing
+    p: Users can share each poll using our Social Sharing feature, which connects to sites like Facebook & Twitter. Learn more
+
+- h1: Friends
+  url: friends
+  features:
+  - h1: Easy Management
+    p: Your users can access your friends list from any page on the site was its just a click away. They will find it easy to find their friends as we provide a powerful search tool that picks up on their friends full name and/or email. Users can also list their friends that start with a specific letter from the alphabet.
+  - h1: Profile Lists
+    p: In addition to allowing users to create custom friends lists they can also display these lists direct on their profiles.
+  - h1: Relationship Status
+    p: You can assign a relationship status you have with another member of the site. Admins can control what statues users can choose from direct from the AdminCP. We provide statuses from Married, Engaged to Single and much more.
+  - h1: Friends Lists
+    p: Each of your users can create their own list to group their friends in and organize all of their friendships.
+  - h1: Keep Track of Requests
+    p: Your users can keep track of all the friends requests they have sent out as well as all the friends requests coming in.
+  - h1: Birthday Notifications
+    p: Your users can keep track of their friends birthdays by visiting the dashboard as we notify users when their friends birthdays are coming up.
+  - h1: Send Birthday E-Cards
+    p: Your users can send out birthday e-cards and congratulate their friends on their birthdays.
+  - h1: Friends Suggestion
+    p: Our Friends Suggestion feature is designed to find suggestions based on friends of your friends and then try to find users who are located in the same Country, State/Province and City (If that feature is enabled). One friend suggestion is displayed on a users dashboard with a link to view all the friend suggestions available to them.
+  - h1: Mutual Friends
+    p: When viewing a users profile we list all the friends they both have in common.
+
+- h1: Private Messaging
+  url: mail
+  features:
+  - h1: Easily Find Friends
+    p: Your users can easily find their friends by using our advanced search tool when they are composing a new message. Includes support to send a message to multiple users.
+  - h1: Send a Copy to Yourself
+    p: Users can send a copy of the message they are composing to themselves.
+  - h1: Attachment Support
+    p: Users can attach virtually anything (Admin controls what is allowed) to their messages to share with their friends.
+  - h1: Captcha Support
+    p: Admins can enable the "Captcha" routine if they want a specific user group to verify they are not a bot. This option is disabled by default but is enabled for those that are considered to be "spamming".
+  - h1: Send a Personal Message
+    p: Users can send a personal message to any member or just their friends (depending on how your site is setup).
+
+- h1: Quizzes
+  url: quizzes
+  features:
+  - h1: Multiple Questions & Answers
+    p: Users can create a quiz with multiple questions and for each question they can create multiple answers.
+  - h1: Include Photos with Quizzes
+    p: For each quiz that is created your users can attach an image.
+  - h1: View Results
+    p: Once a user has taken a quiz they can view the results of the quiz, which includes a list of who took the quiz and what answers they choose for each question.
+  - h1: Approval System
+    p: Admins can enable our approval system where if enabled users will have their quizzes viewed by a site moderator before it can be viewed publicly. The moderators can then decide to either approve or deny the quiz.
+  - h1: Privacy Control
+    p: Users can control who can view and comment on their quiz. Learn more about privacy control here.
+  - h1: Likes & Comments
+    p: We keep your users active by giving them the ability to easily Like or comment on a quiz.
+  - h1: Social Sharing
+    p: Users can share each quiz using our Social Sharing feature, which connects to sites like Facebook & Twitter. Learn more
+
+- h1: Events
+  url: events
+  features:
+  - h1: Start & End Times
+    p: Your users can define the exact time their event will start and end.
+  - h1: Invite Friends
+    p: Users can invite their friends via browsing their friends using our powerful guest list manager or by sending out emails.
+  - h1: Mass Email
+    p: Keeping users up-to-date with an event is crucial and those that host events can mass email all of their guests direct from their event manager.
+  - h1: Social Sharing
+    p: Users can share each event using our Social Sharing feature, which connects to sites like Facebook & Twitter. Learn more
+  - h1: Report an Event
+    p: Events can be reported to the Admins by the community to help prevent SPAM and/or remove inappropriate material that is considered to breach the terms & conditions of the site.
+  - h1: RSVP
+    p: Potential guests to an event can RSVP one of the following options...    Attending  Maybe Attending  Not Attending   
+  - h1: Approval System
+    p: Admins can enable our approval system where if enabled users will have their events viewed by a site moderator before it can be viewed publicly. The moderators can then decide to either approve or deny the event.
+  - h1: Custom Categories
+    p: You can create as many categories as you want for events. Each category can have an unlimited amount of child categories.
+  - h1: Search Filter
+    p: By using our search filter your users can easily find the events they are looking for.
+  - h1: Featured Events
+    p: You can feature any event you like and once its featured it will be moved to the top of the list so users can all see these events every time they visit the event section.
+  - h1: Browsing Guest List
+    p: When viewing an event we provide an AJAX powered guest list browser for your users.
+  - h1: Quick & Easy
+    p: We provide a block on your users dashboard so they can create an event at anytime within seconds.
+  - h1: Privacy Control
+    p: Users can control who can view and comment on their event. Learn more about privacy control here.
+  - h1: Likes & Comments
+    p: We keep your users active by giving them the ability to easily Like or comment on an event.
+  - h1: Activity Feed
+    p: Each event includes its very own activity feed. Learn more here.
+
+- h1: Music
+  url: music
+  features:
+  - h1: Likes & Comments
+    p: We keep your users active by giving them the ability to easily Like or comment on a song or album.
+  - h1: Privacy Control
+    p: Users can control who can view and comment on their songs or albums. Learn more about privacy control here.
+  - h1: Upload MP3's
+    p: Musicians can upload as many MP3's as your permit them.
+  - h1: Music Albums
+    p: Musicians can create as many music albums and include information about the album and when it was created. Each album can include one picture as their album art and MP3 tracks.
+  - h1: Social Sharing
+    p: Users can share each song or album using our Social Sharing feature, which connects to sites like Facebook & Twitter. Learn more
+  - h1: Report Songs & Albums
+    p: Songs and albums can be reported to the Admins by the community to help prevent SPAM and/or remove inappropriate material that is considered to breach the terms & conditions of the site.
+  - h1: Rate Songs & Albums
+    p: Your users can rate songs and albums added by other users using an easy "click-a-star" system.
+  - h1: Album Tracklist
+    p: When viewing a music album we provide a tracklist that has all the songs uploaded to this album.
+  - h1: Browse Filter
+    p: By using our browse filter your users can easily find songs or albums they are looking for.
+  - h1: Browse Artists, Songs & Albums
+    p: We provide the ability for your users to browse songs, albums and artists.
+  - h1: Featured Songs & Albums
+    p: You can feature both songs and albums you like and once its featured it will be moved to the top of the list so users can all see these songs or albums every time they visit the music section.
+  - h1: Define Music Index Page
+    p: You can decide what should be displayed on the music index page. You can select to display artists, songs or albums on this page.
+  - h1: Approval System
+    p: Admins can enable our approval system where if enabled users will have their songs and/or albums viewed by a site moderator before it can be viewed publicly. The moderators can then decide to either approve or deny the song and/or album.
+
+- h1: Marketplace
+  url: marketplace-listings
+  features:
+  - h1: Privacy Control
+    p: Users can control who can view and comment on their listings. Learn more about privacy control here.
+  - h1: Price Tag
+    p: Users can create marketplace listing with a price tag, which will allow them to advertise the items or services they plan on selling.
+  - h1: Location Based
+    p: Provide as much information as possible for where the item and/or service is located. This information includes the country, state, city and ZIP/Postal code.
+  - h1: Multiple Photos
+    p: Your users can upload up to 6 photos for their listing to give other users a better idea of what they are selling. Admins can control how many photos can be uploaded and by default this is set to 6.
+  - h1: Invite Friends
+    p: Users can invite their friends via browsing their friends using our powerful guest list manager or by sending out emails.
+  - h1: Social Sharing
+    p: Users can share each listing using our Social Sharing feature, which connects to sites like Facebook & Twitter. Learn more
+  - h1: Report a Listing
+    p: Listings can be reported to the Admins by the community to help prevent SPAM and/or remove inappropriate material that is considered to breach the terms & conditions of the site.
+  - h1: Approval System
+    p: Admins can enable our approval system where if enabled users will have their listings viewed by a site moderator before it can be viewed publicly. The moderators can then decide to either approve or deny the listing.
+  - h1: Custom Categories
+    p: You can create as many categories as you want for your marketplace. Each category can have an unlimited amount of child categories.
+  - h1: Search Filter
+    p: By using our search filter your users can easily find the listings they are looking for.
+  - h1: Featured Listings
+    p: You can feature any listing you like and once its featured it will be moved to the top of the list so users can all see these listings every time they visit the marketplace.
+  - h1: Sell Marketplace Listings
+    p: Your users can easily sell items on your marketplace and payments go directly to their PayPal or 2checkout account.
+  - h1: Likes & Comments
+    p: We keep your users active by giving them the ability to easily Like or comment on a listing.
+
+- h1: Announcements
+  url: announcements
+  features:
+  - h1: Start Time & Date
+    p: Admins can create announcements and define when it should start.
+  - h1: Target Viewers
+    p: When you write an announcement you can define who the target viewers are. You can select which user group and if the user is located in a specific country and what their gender is as well as their age group.
+  - h1: Multilingual
+    p: Each announcement has multilingual support, which allows you to create it in every language package you have installed.
+  - h1: Displayed in Dashboard
+    p: To make sure everyone sees your announcement you can define if it should be displayed within your sites dashboard.
+  - h1: Hide an Announcement
+    p: When creating an announcement you can decide if your users can close and hide the announcement so they won't have to keep seeing it, however you can disable this feature for them in case you have some very important information that they must see.
+
+- h1: Account Privacy
+  url: account-and-privacy-management
+  features:
+  - h1: Invisible Mode
+    p: Your users can enable the "Invisible Mode" option from the "Privacy Settings" page. If enabled they will not be shown within any "Online" lists.
+  - h1: Profile Privacy
+    p: Users can customize how other users or guests interact with them via their profile.
+  - h1: Items
+    p: Control your default privacy for items you add on the site. Learn more about privacy control here.
+  - h1: Notifications
+    p: Users can control what email notifications are sent out to them. We send out emails to your users based on any activity related to items they add or are subscribed to.
+  - h1: Blocking Users
+    p: We give the ability for your users to block other users on the site. They can manage these users from their "Privacy Settings" page and remove them at anytime.
+
+- h1: Newsletter
+  url: newsletter
+  features:
+  - h1: Internal PM or Email
+    p: You can send out a newsletter to your members either as an internal private message or an email.
+  - h1: Archive Support
+    p: You can archive each newsletter that is sent out.
+  - h1: Privacy Override
+    p: Your users may have a privacy setting enable to not receive a PM or an email, however you as an Admin may have some very important information that they must be aware off and you can override these privacy settings. This option is disabled by default.
+  - h1: Target Viewers
+    p: When you write a newsletter you can define who the target viewers are. You can select which user group and if the user is located in a specific country and what their gender is as well as their age group.
+  - h1: Newsletters per Round
+    p: If you have a lot of users it might be too much to ask your server to send all those emails at once. Not to worry you can define how many emails to send per a pages refresh. We set this to 50 by default.
+  - h1: HTML & Plain Text Emails
+    p: When you create your newsletter and you plan on sending out an email you can add both HTML and Plain Text content.
+  - h1: Failsafe
+    p: If you can't send out all the newsletters in one session you can always come back at a later time, even days later and you can continue sending out your newsletter.
+
+- h1: Subscriptions
+  url: subscriptions
+  features:
+  - h1: Monetize
+    p: You can create subscription packages that can connect to a user group with special "powers" other user groups don't have. You can even charge for your users to be part of these special groups.
+  - h1: Pay Before Usage
+    p: You can include subscription packages and force new users to sign up for a package before they can officially use the site. Once their payment is "okayed" their account will automatically be updated and they will be notified that they can now enjoy your community.
+  - h1: Easy Management for End Users
+    p: Your users can easily manage their subscription purchases and keep track of any past purchases they have made and if they plan on upgrading to another membership level direct from their dashboard.
+  - h1: Payment Gateways API
+    p: We have included with our product support for both PayPal and 2checkout giving you the best of what both companies can provide for online payments.
+
+- h1: Custom Fields
+  url: custom-fields
+  features:
+  - h1: Custom Groups
+    p: For each custom field you create it can belong to a custom group. By splitting up your fields into groups it will make it a lot easier on your members to edit these fields.
+  - h1: Custom Field Location
+    p: You can define where a custom field should be located when its being displayed on a users profile. It can be on either the left or right panels or within the "Basic Information" block.
+  - h1: Required Fields
+    p: You may want certain fields to require a value when a user registers or edits their profile.
+  - h1: Include on Registration
+    p: You can add each custom field to the registration form.
+  - h1: Supported Types
+    p: We support the following custom fields...    Large Text Area  Small Text Area (255 Characters Max)  Selection  Multiple Selection  Radio  Checkbox  
+  - h1: Editing Custom Fields
+    p: Your users can edit the values for your custom fields from their "Edit Profile" section. All the custom fields are placed there and neatly grouped for easy and quick access.
+  - h1: Inline Profile Editing
+    p: Your users can edit their custom fields from the "Edit Profile" section or they can directly do this from their profile using our "Inline Profile Editing" feature, which allows them to update each field on the spot.
+
+- h1: Emoticons
+  url: emoticons
+  features:
+  - h1: Emoticon Packages
+    p: You can easily upload a new emoticon package. It does not even have to be intended for PHPfox, all it needs is to have all the emoticon image archived into a ZIP and we will unzip and do the rest for you.
+  - h1: Emoticon Manager
+    p: Using our emoticon manager you can easily activate or deactivate an emoticon package. You can also edit, delete or download a ZIP archive for each package.    When managing an emoticon package you can change the symbol representing an emoticon as well as define the order for the emoticons that will be used when displaying them to your members.  
+  - h1: Overall Site Support
+    p: In most areas that provide larger content like a comment, blog entry or a shoutbox message we give your users the ability to use emoticons. In most areas that support emoticons we provide a text editor where users can see all the supported emoticons and choose which ones they want to use.
+
+- h1: Multilingual
+  url: multilingual
+  features:
+  - h1: Create Your Own Language Package
+    p: From the AdminCP you can create your own language package and translate it into any language you would like. You can select what language to create the language package from, which by default is the default English language package. We provide support for text direction (Left to Right or Right to Left).
+  - h1: Phrase Manager
+    p: Easily translate your language package direct from our powerful phrase manager.
+  - h1: Import/Export Language Packages
+    p: You can import and export language packages direct from your Language Manager. Importing a language package requires uploading the language files to your and clicking on the "Install" link. You can find already translated Language Package here.
+  - h1: Allow User Selection
+    p: For each language package you can define if your users can use this language package publicly.
+
+
+- h1: Report Users/Items
+  url: report-users-items
+  features:
+  - h1: Reporting Items
+    p: On most items that are added to the site by your users we give the community the ability to report the item to Admins in case they feel it breaches your sites terms and/or conditions.
+  - h1: Reporting Users
+    p: Your users can report other members if they feel they have something on their profile or have done something on the site that breaches your terms and/or conditions.
+  - h1: AdminCP Report Notices
+    p: When you visit your AdminCP we provide you with information if anything has been reported to you or your staff can look over the report right away.
+  - h1: Managing Report Items
+    p: We group all the reported items within the AdminCP so you or your staff can look over each reported item and deal with them appropriately.
+  - h1: Custom Categories
+    p: When your users report an item they can select what category the report belongs too. This will make it easier for you and your staff to understand why the item was reported. You can create as many categories as you want. We provide the following categories by default...    Attacks Individual or Group  Copyright Infringement  Drug Use  Nudity or Pornography  Violence  
+
+- h1: SEO Friendly
+  url: seo-friendly
+  features:
+  - h1: SEF (Search Engine Friendly) URLs
+    p: All items that search bots can have access too uses our SEF URLs. An example of our SEF URLs we could link to a blog using its unique ID number like this...    http...//www.yoursite.com/index.php?cmd=blog&id=1234    Instead we use the title of the item, which in this case is the title of the blog entry to create the unique identifier for us. The URL would look like this instead...    http...//www.yoursite.com/blog/the-title-of-this-blog/  
+  - h1: Unique Meta Keywords & Description
+    p: When viewing certain sections we provide you with options in the AdminCP to give that section custom meta keywords and/or descriptions.    When viewing an item like a blog or photo or even a users profile we make sure we create unique meta keywords and/or descriptions based on the items title or description.  
+  - h1: H1 Breadcrumbs
+    p: We use breadcrumb standards when users browse your community and always use the H1 tags for search bots to pick up the important keywords for that specific page.
+  - h1: Keyword String Removal
+    p: There are certain words that you may not want to be included within your sites keywords and we give you the option to control these keywords.
+
