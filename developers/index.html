@@ -45,7 +45,7 @@
 			<div class="container">
 
 				<div class="navbar cbp-af-inner" role="navigation">
-					<div class="navbar-header">
+					<header class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
@@ -57,13 +57,18 @@
 								PHPfox
 							</a>
 						</h1>
-					</div>
+						
+						<h2>
+							Developers
+						</h2>
+						
+					</header>
 
 					
 						<nav class="navbar-collapse pull-right">
 							<ul class="nav navbar-nav">
 								
-								<li><a href="#">My Products</a></li>
+								<li><a href="http://store.phpfox.com/techie/apply">My Products</a></li>
 								
 								<li><a href="/" class="what-is-phpfox">What is PHPfox?</a></li>
 							</ul>
@@ -88,37 +93,35 @@
 	</div>
 </div>
 
-<section>
+<section class="bg-white">
 
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-5 col-sm-offset-1">
 				<div class="vertical-align">
 					<h2>Sell in our Store</h2>
-					<p>Take advantage of our Store and everything it has to offer to give you all that you need to sell your products with ease.</p>
-					<p>You don't have to worry about setting up a store front just to distribute your products when you can not only get access to the tools needed, but a client base to that can easily find your products.</p>
+					<p>Take advantage of our Store and everything it has to offer to give you all that you need to sell your products with ease. You don't have to worry about setting up a store front just to distribute your products when you can not only get access to the tools needed, but a client base to that can easily find your products.</p>
 				</div>
 			</div>
-			<div class="col-sm-5 text-center">
-				<img class="margin-top img-responsive" src="/assets/img/imac.png" alt="Generic placeholder image" data-scrollreveal="move 100px and enter from the right after 0.55s" width="429">
+			<div class="col-sm-5 text-center vertical-align">
+				<img class="img-responsive" src="//da1a3suzxtd3z.cloudfront.net/assets/img/cc.png" data-scrollreveal="move 100px and enter from the bottom after 0.55s">
 			</div>
 		</div>
 	</div>
 
 </section>
 
-<section class="bg-primary">
+<section>
 
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-5 text-center">
-				<img class="margin-top img-responsive" src="/assets/img/imac.png" alt="Generic placeholder image" data-scrollreveal="move 100px and enter from the bottom after 0.55s" width="429">
+			<div class="col-sm-5 text-right vertical-align">
+				<img src="//da1a3suzxtd3z.cloudfront.net/assets/img/download.png" data-scrollreveal="move 100px and enter from the left after 0.55s">
 			</div>
 			<div class="col-sm-5 col-sm-offset-1">
 				<div class="vertical-align">
 					<h2>Instant Download</h2>
-					<p>Once your client makes a purchase via our Store it is an instant download for them.</p>
-					<p>There is no stress about file distribution, let our store take care of that for you.</p>
+					<p>Once your client makes a purchase via our Store it is an instant download for them. There is no stress about file distribution, let our store take care of that for you.</p>
 				</div>
 			</div>
 		</div>
@@ -171,6 +174,32 @@
 							<a href="#" target="_blank" class="s-twitter"><i class="fa fa-twitter"></i></a>
 							<a href="#" target="_blank" class="s-facebook"><i class="fa fa-facebook"></i></a>
 							<a href="#" target="_blank" class="s-github"><i class="fa fa-github"></i></a>
+
+							<div class="row get-in-touch-form newsletter-form">
+								<strong>Join our newsletter</strong>
+								<div>
+									<div id="mc_embed_signup">
+										<form action="//phpfox.us3.list-manage.com/subscribe/post?u=913ff71ef8ec8784c388f2b5c&amp;id=00f60ae155" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+											<div id="mc_embed_signup_scroll">
+												<div class="form-group">
+													<input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Your email...">
+												</div>
+												<div id="mce-responses" class="clear">
+													<div class="response" id="mce-error-response" style="display:none"></div>
+													<div class="response" id="mce-success-response" style="display:none"></div>
+												</div>
+												<div style="position: absolute; left: -5000px;"><input type="text" name="b_913ff71ef8ec8784c388f2b5c_00f60ae155" tabindex="-1" value=""></div>
+												<div class="form-group"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-default"></div>
+											</div>
+										</form>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="row get-in-touch-form">
+								<a href="#" class="get-in-contact btn btn-default">Get in Touch</a>
+							</div>
 						</div>
 
 					</div>
@@ -189,8 +218,12 @@
 
 		</footer>
 
+
+		<a href="#" class="contact-us">Any Questions?</a>
+
 		<script src="/assets/js/jquery-1.10.2.min.js"></script>
 		<script src="/assets/js/bootstrap.min.js"></script>
+		<script src="/assets/js/jquery.visible.min.js"></script>
 		<script src="/assets/js/classie.js"></script>
 		<script src="/assets/js/owl.carousel.min.js"></script>
 		<script src="/assets/js/scrollReveal.js"></script>
@@ -215,5 +248,14 @@
 		script.parentNode.insertBefore(resource, script);
 	</script>
 	-->
-</body>
+
+		<script>// window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("//assets.zendesk.com/embeddable_framework/main.js","phpfox.zendesk.com");</script>
+		<script>
+			/*
+			zE(function() {
+				zE.hide();
+			});
+			*/
+		</script>
+	</body>
 </html>
