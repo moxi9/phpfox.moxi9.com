@@ -8,14 +8,17 @@ id: index
 		<form class="form-inline" id="new-order">
 			<input type="hidden" name="id" id="order-id" value="1365422020">
 			<div class="form-group">
+				<div class="alert alert-danger hide" role="alert">Provide your name.</div>
 				<input type="text" class="form-control" id="name" placeholder="Name">
 			</div>
 			<div class="form-group">
+				<div class="alert alert-danger hide" role="alert">Provide a valid email.</div>
 				<input type="email" class="form-control" id="email" placeholder="Email">
 			</div>
 			<div class="form-group">
 				<button type="submit" class="btn btn-primary active">
 					Get Started! <em>$299<span> / one-time fee</span></em>
+					<i class="fa fa-spin fa-spinner"></i>
 				</button>
 			</div>
 		</form>
@@ -113,17 +116,17 @@ id: index
 
 <section id="faq">
 	<div class="container">
+
 		<div class="page-header text-center">
 			<h1>FAQ</h1>
 			<h2>Do you have Questions?</h2>
 		</div>
 		<div class="row">
-
 			<div class="faq" id="faq">
 				{% include faq.html %}
 			</div>
-
 		</div>
+
 	</div>
 
 </section>

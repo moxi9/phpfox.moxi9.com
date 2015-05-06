@@ -1,6 +1,7 @@
 ---
 layout: bootstrap
 title: Cookies
+h2: Terms
 ---
 
 # Cookie Policy

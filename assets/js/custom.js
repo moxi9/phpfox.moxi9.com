@@ -25,8 +25,28 @@ $(document).ready(function() {
 	});
 
 	$('#new-order').submit(function() {
+		var t = $(this),
+			n = $('#name'),
+			e = $('#email'),
+			errors = 0;
 
-		window.location.href = 'http://shop.phpfox.com/pages/checkout?id=' + $('#order-id').val() + '&email=' + encodeURIComponent($('#email').val()) + '&name=' + encodeURIComponent($('#name').val());
+		if (!n.val()) {
+			n.parent().addClass('has-error');
+			n.parent().find('.alert').removeClass('hide');
+			n.focus();
+			errors++;
+		}
+
+		if (!e.val()) {
+			e.parent().addClass('has-error');
+			e.parent().find('.alert').removeClass('hide');
+			errors++;
+		}
+
+		if (!errors) {
+			t.find('button').addClass('disabled');
+			window.location.href = 'http://shop.phpfox.com/pages/checkout?id=' + $('#order-id').val() + '&email=' + encodeURIComponent($('#email').val()) + '&name=' + encodeURIComponent($('#name').val());
+		}
 
 		return false;
 	});
@@ -76,6 +96,12 @@ $(document).ready(function() {
 
 		return false;
 	});
+
+	/*
+	setTimeout(function() {
+
+	}, 2000);
+	*/
 });
 
 
@@ -328,6 +354,30 @@ function onePageScroll() {
       }
   });
 
+	$('.view-all-faq').click(function() {
+		$('.list-group-item').addClass('active');
+
+		return false;
+	});
+
+	$('.contact-us, .get-in-contact').click(function() {
+		var t = $(this);
+
+		if (t.hasClass('active')) {
+			t.removeClass('active');
+			zE.hide();
+
+			return false;
+		}
+
+		t.addClass('active');
+		zE.activate({hideOnClose: true});
+
+		// console.log(Object.keys(zE));
+
+		return false;
+	});
+
 	$('.build-in-features section:first-of-type').show();
 	$('.build-in-menu a').click(function() {
 		var t = $(this),
@@ -350,12 +400,33 @@ function onePageScroll() {
 	});
 };
 
+function isScrolledIntoView(elem)
+{
+	var $elem = $(elem);
+	var $window = $(window);
+
+	var docViewTop = $window.scrollTop();
+	var docViewBottom = docViewTop + $window.height();
+
+	var elemTop = $elem.offset().top;
+	var elemBottom = elemTop + $elem.height();
+
+	return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+};
+
 if ($('#page-index').length) {
 	var dropForm = false;
 	$(window).scroll(function() {
 	    var windowpos = $(window).scrollTop(),
 		    windowHeight = $(window).height(),
 		    navHeight = $('.navbar-wrapper').height();
+
+		if ($('.footer').visible(true)) {
+			$('.contact-us').fadeOut();
+		}
+		else {
+			$('.contact-us').fadeIn();
+		}
 
 	  if (windowpos <= (windowHeight - navHeight)) {
 	     $('.nav li.current').removeClass('current');
