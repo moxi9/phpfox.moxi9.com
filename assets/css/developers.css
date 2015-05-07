@@ -40,6 +40,8 @@
   height: 500px;
   margin: 0px;
   color: #fff;
+  font-weight: 200;
+  letter-spacing: 1px;
 }
 .dev-join-now,
 .dev-join-now:hover,

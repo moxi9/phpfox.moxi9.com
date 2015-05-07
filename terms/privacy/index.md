@@ -1,6 +1,7 @@
 ---
 layout: bootstrap
 title: Privacy Policy
+h2: Terms
 ---
 # Privacy Policy
 We keep our privacy notice under regular review and we will reflect any updates within this notice.

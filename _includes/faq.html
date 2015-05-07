@@ -1,15 +1,17 @@
 <div class="list-group">
+	{% for faq in site.data.faq %}
 	<a href="#" class="list-group-item">
-		<h4 class="list-group-item-heading">Is the source code encrypted?</h4>
+		<h4 class="list-group-item-heading">{{ faq.q }}</h4>
 		<p class="list-group-item-text">
-			No, not one bit of it is! The PHPfox source code is 100% non-encrypted, giving you the power to customize the script without limitation.
+			{{ faq.a }}
 		</p>
 	</a>
-	<a href="#" class="list-group-item">
-		<h4 class="list-group-item-heading">Can I get a refund for my purchase?</h4>
-		<p class="list-group-item-text">
-			Yes, as long as your order was made within 30 Days you are fully entitled to request a refund with No Questions Asked!
-			Further details can be read here.
-		</p>
-	</a>
+	{% endfor %}
+	<div class="row text-center faq-ending">
+		<ul class="list-inline">
+			<li><a href="#" class="view-all-faq btn btn-default">View All FAQ</a></li>
+			<li>or</li>
+			<li><a href="#" class="get-in-contact">get in touch with us</a></li>
+		</ul>
+	</div>
 </div>

@@ -217,7 +217,45 @@ h6,
 .btn {
   font-size: 12px;
 }
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary.active[disabled],
+fieldset[disabled] .btn-primary.active {
+  background: #fff;
+  color: #222;
+  border-color: transparent;
+}
+.btn-primary.disabled > i,
+.btn-primary[disabled] > i,
+fieldset[disabled] .btn-primary > i,
+.btn-primary.disabled:hover > i,
+.btn-primary[disabled]:hover > i,
+fieldset[disabled] .btn-primary:hover > i,
+.btn-primary.disabled:focus > i,
+.btn-primary[disabled]:focus > i,
+fieldset[disabled] .btn-primary:focus > i,
+.btn-primary.disabled:active > i,
+.btn-primary[disabled]:active > i,
+fieldset[disabled] .btn-primary:active > i,
+.btn-primary.disabled.active > i,
+.btn-primary.active[disabled] > i,
+fieldset[disabled] .btn-primary.active > i {
+  font-size: 20px;
+  display: inline-block;
+}
 #get-started-form {
+  border-top: 1px #dfdfdf solid;
   /*
 	.page-header {
 		> h2 {
@@ -244,6 +282,7 @@ h6,
   /*width:33%;*/
   width: 33%;
   padding: 0px 6px;
+  vertical-align: bottom;
 }
 #get-started-form .form-group .form-control,
 #get-started-form .form-group .btn {
@@ -254,10 +293,16 @@ h6,
   color: #999999;
   display: inline-block;
   margin-left: 10px;
-  text-transform: normal;
+  text-transform: none;
   font-size: 80%;
   vertical-align: middle;
   margin-bottom: 4px;
+}
+#get-started-form .form-group .btn > i {
+  display: none;
+}
+section.bg-white {
+  background: #fff;
 }
 section.bg-primary {
   background: #2f2f2f;
@@ -268,17 +313,25 @@ section.bg-primary h2 {
   color: #fff;
 }
 section.bg-primary p {
-  color: #e6e6e6;
+  color: #808080;
 }
 a.list-group-item.active,
 a.list-group-item.active:hover,
 a.list-group-item.active:focus {
-  background: #f47d30;
-  border-color: #f47d30;
+  background: #2f2f2f;
+  color: #fff;
 }
 .btn,
 .list-group-item {
   border-radius: 0px !important;
+}
+.btn {
+  border-radius: 30px !important;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.btn:hover {
+  transition: all 0.5s ease;
 }
 .faq {
   max-width: 500px;
@@ -288,18 +341,43 @@ a.list-group-item.active:focus {
   text-align: center;
   margin-bottom: 20px;
 }
+.faq .list-group-item:nth-of-type(n+6) {
+  display: none;
+}
+.faq .list-group-item.active:nth-of-type(n+6) {
+  display: block;
+}
 a.list-group-item,
-a.list-group-item:hover {
+a.list-group-item:hover,
+a.list-group-item:focus,
+a.list-group-item.active,
+a.list-group-item.active:hover,
+a.list-group-item.active:focus {
   padding: 20px;
+  color: #fff;
+  border-color: #cccccc;
 }
 a.list-group-item .list-group-item-heading,
-a.list-group-item:hover .list-group-item-heading {
+a.list-group-item:hover .list-group-item-heading,
+a.list-group-item:focus .list-group-item-heading,
+a.list-group-item.active .list-group-item-heading,
+a.list-group-item.active:hover .list-group-item-heading,
+a.list-group-item.active:focus .list-group-item-heading {
   margin-bottom: 0px;
-  color: #9a9a9a;
+  color: #676767;
+}
+a.list-group-item.active .list-group-item-heading,
+a.list-group-item.active:hover .list-group-item-heading,
+a.list-group-item.active:focus .list-group-item-heading {
+  color: #fff;
+}
+.faq-ending {
+  margin-top: 30px;
 }
 .list-group-item-text {
   display: none;
   padding-top: 10px;
+  color: #9a9a9a !important;
 }
 .list-group-item.active .list-group-item-text {
   display: block;
@@ -354,7 +432,7 @@ a.list-group-item:hover .list-group-item-heading {
   bottom: 0px;
   text-align: center;
   background: #fff;
-  z-index: 200;
+  z-index: 99999999;
 }
 #get-started-form h3 {
   display: block;
@@ -378,7 +456,7 @@ a.list-group-item:hover .list-group-item-heading {
   display: block;
   -moz-transition: none;
   -webkit-transition: none;
-  -o-transition: color 0 ease-in;
+  /*-o-transition: color 0 ease-in;*/
   transition: none;
   height: 40px;
   line-height: 34px;
@@ -584,6 +662,15 @@ footer.footer {
   padding-top: 0px;
   padding-bottom: 150px;
 }
+footer.footer .btn {
+  background: #f47d30;
+  color: #fff;
+}
+footer.footer .btn:hover {
+  border-color: #fff;
+  background: #2f2f2f;
+  color: #fff;
+}
 footer.footer .footer-nav {
   padding-top: 40px;
 }
@@ -693,6 +780,19 @@ footer.footer h3 {
   padding: 0px;
   line-height: 70px;
   height: 70px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.not-index-page .navbar-header h2,
+#page-index .navbar-header h2 {
+  vertical-align: middle;
+  display: inline-block;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-left: 10px;
+  color: #f47d30;
+  margin-top: 30px;
 }
 .cbp-af-header .nav a.what-is-phpfox,
 .in-fixed-mode .cbp-af-header .nav a.what-is-phpfox,
@@ -725,7 +825,7 @@ footer.footer h3 {
   width: 40px;
   color: #fff;
   border-radius: 50%;
-  margin: 0px 5px;
+  margin: 0px 5px 20px 0px;
 }
 .social > a > i,
 .social > a:hover > i {
@@ -761,4 +861,63 @@ footer.footer h3 {
 section.dark.with-bg {
   background-image: url("../img/be-the-boss-of-your-online-social-network-with-phpfox.jpg");
   background-size: cover;
+}
+a.contact-us,
+a.contact-us:hover,
+a.contact-us:focus {
+  display: block;
+  position: fixed;
+  right: 10px;
+  bottom: 8px;
+  height: 50px;
+  line-height: 46px;
+  padding: 0px 20px;
+  border-radius: 30px;
+  background: #fff;
+  border: 3px #dfdfdf solid;
+  color: #9a9a9a;
+  z-index: 9999999;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+}
+a.contact-us > span,
+a.contact-us:hover > span,
+a.contact-us:focus > span {
+  margin-left: 8px;
+}
+a.contact-us > i,
+a.contact-us:hover > i,
+a.contact-us:focus > i {
+  font-size: 30px;
+  vertical-align: middle;
+  color: #e6e6e6;
+}
+a.contact-us:hover {
+  border-color: #f47d30;
+  transition: all 0.5s ease;
+  color: #222;
+}
+.get-in-touch-form {
+  padding: 20px;
+}
+.get-in-touch-form #mc_embed_signup .btn {
+  display: none;
+}
+.get-in-touch-form > strong {
+  font-weight: 300;
+  text-transform: uppercase;
+  display: block;
+  padding-bottom: 10px;
+  color: #808080;
+}
+.get-in-touch-form .form-control {
+  background: #4d4d4d;
+  color: #808080;
+  border-color: transparent;
+}
+.newsletter-form {
+  border: 3px #262626 solid;
+  padding: 20px;
+  margin: 10px 0px;
 }
