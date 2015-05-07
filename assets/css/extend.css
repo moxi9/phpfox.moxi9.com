@@ -744,3 +744,21 @@ footer.footer h3 {
   color: #b3b3b3;
   font-weight: 300;
 }
+.overlay-bg-lighter {
+  background: rgba(0, 0, 0, 0.4);
+}
+.p-special {
+  font-style: italic;
+  font-size: 18px !important;
+  color: #e6e6e6 !important;
+  font-weight: 600 !important;
+  margin-bottom: 10px !important;
+}
+.p-special-2 {
+  color: #d9d9d9 !important;
+  font-size: 16px !important;
+}
+section.dark.with-bg {
+  background-image: url("../img/be-the-boss-of-your-online-social-network-with-phpfox.jpg");
+  background-size: cover;
+}
