@@ -162,17 +162,17 @@ blockquote {
   border-color: #c6c6c6;
 }
 .btn-primary {
-  background: #2f2f2f;
+  background: #3c3c3c;
 }
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #101010;
+  background-color: #1d1d1d;
   background-position: 0 -15px;
 }
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #101010;
-  border-color: #0b0b0b;
+  background-color: #1d1d1d;
+  border-color: #181818;
 }
 .btn-success {
   background: #88b54e;
@@ -247,7 +247,7 @@ blockquote {
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-  background-color: #222222;
+  background-color: #2f2f2f;
 }
 .preloader {
   position: fixed;
@@ -255,7 +255,7 @@ blockquote {
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: #2f2f2f;
+  background-color: #3c3c3c;
   /* background-color is important, or it will be see-through, and we don't want that! */
   text-align: center;
   z-index: 9999999;
@@ -521,7 +521,7 @@ blockquote {
   height: 100%;
   top: 0;
   left: 0;
-  background: #2f2f2f;
+  background: #3c3c3c;
 }
 /* Overlay closing cross */
 .overlay .overlay-close {
@@ -1112,7 +1112,7 @@ section .login-overlay {
   box-shadow: none;
 }
 .progress-bar {
-  background-color: #2f2f2f;
+  background-color: #3c3c3c;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -1142,13 +1142,13 @@ section .login-overlay {
 .list-group-item.active,
 .list-group-item.active:hover,
 .list-group-item.active:focus {
-  background-color: #2f2f2f;
+  background-color: #3c3c3c;
 }
 .panel-default > .panel-heading {
   background-color: #f5f5f5;
 }
 .panel-primary > .panel-heading {
-  background-color: #2f2f2f;
+  background-color: #3c3c3c;
 }
 .panel-success > .panel-heading {
   background-color: #dff0d8;
@@ -1532,7 +1532,7 @@ section.light.with-bg {
   background-size: cover;
 }
 section.dark {
-  background: #2f2f2f;
+  background: #3c3c3c;
 }
 section.dark.with-bg {
   background: url('../img/bg-content1.jpg') center center no-repeat;
@@ -1814,7 +1814,7 @@ section .overlay-text {
   margin: 0;
   overflow: hidden;
   position: relative;
-  background-color: rgba(47, 47, 47, 0.7);
+  background-color: rgba(59, 59, 59, 0.7);
   border-radius: 4px;
 }
 .grid figure .info {
@@ -1839,7 +1839,7 @@ section .overlay-text {
   position: relative;
 }
 .grid figcaption {
-  background-color: rgba(47, 47, 47, 0.97);
+  background-color: rgba(59, 59, 59, 0.97);
   min-height: 35px;
   left: 0;
   padding: 16px 3px 0 0;
@@ -2040,7 +2040,7 @@ section .overlay-text {
   color: rgba(51, 51, 51, 0.7);
 }
 footer.footer {
-  background: #2f2f2f;
+  background: #3c3c3c;
   padding: 5em 0;
   color: white;
 }
@@ -2469,7 +2469,7 @@ footer.footer .icon {
     text-align: center;
   }
   .navbar-collapse {
-    background-color: rgba(47, 47, 47, 0.9);
+    background-color: rgba(59, 59, 59, 0.9);
   }
   .navbar-collapse ul {
     width: 100%;
@@ -2481,7 +2481,7 @@ footer.footer .icon {
     line-height: 2;
   }
   .navbar-collapse {
-    background-color: rgba(47, 47, 47, 0.9);
+    background-color: rgba(59, 59, 59, 0.9);
   }
   .navbar-collapse ul {
     width: 100%;

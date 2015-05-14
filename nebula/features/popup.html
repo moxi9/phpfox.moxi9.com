@@ -1,0 +1,32 @@
+---
+title: PHPfox Nebula Features
+---
+{% include nebula/features.html %}
+<script>
+	$(document).ready(function() {
+		console.log('Popup ready...');
+
+
+		$('#nebula-features article').click(function() {
+			var t = $(this);
+
+			$('#nebula-features article.active').removeClass('active');
+			t.addClass('active');
+		});
+
+		$('#nebula-features article li').each(function() {
+			var t = $(this);
+			if (t.hasClass('active')) {
+				return;
+			}
+
+			t.addClass('active');
+			t.tooltip({
+				title: t.find('p').html(),
+				placement: 'bottom',
+				html: true
+			});
+			// t.tooltip('show');
+		});
+	});
+</script>

@@ -3,3 +3,5 @@ permalink: /:title
 
 # Build settings
 markdown: kramdown
+
+version: 1

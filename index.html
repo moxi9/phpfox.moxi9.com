@@ -2,6 +2,7 @@
 layout: bootstrap
 id: index
 title: PHPfox - Start A Social Network Today
+container: hide
 ---
 
 <div id="get-started-form">
@@ -27,54 +28,65 @@ title: PHPfox - Start A Social Network Today
 </div>
 
 <section id="get-started">
-	<div class="item background-cover" style="background-image:url('/assets/img/start-a-social-network-with-phpfox-community-script.jpg')">
+	<div class="item background-cover image-load" data-src="/assets/img/members-profile-social-network-website-with-phpfox-script.jpg">
 		<div class="container">
 			<div class="row">
 				<h1>Start your social network today!</h1>
-				<h2>with PHPfox Neutron</h2>
-			</div>
-		</div>
+				<div class="learn-more">
+					<div>
+						With one of our products
+					</div>
 
-		<!--<div class="overlay-bg"></div>-->
-		<div class="overlay-bg overlay-bg-lighter"></div>
+					<a href="#intro" class="version-4">
+						Neutron<span>the future</span>
+					</a>
+					<span>or</span>
+					<a href="/nebula" class="version-3">
+						Nebula<span>the classic</span>
+					</a>
+				</div>
+			</div>
+
+		</div>
+		<div class="overlay-bg"></div>
 	</div>
 </section>
 
 <section id="intro" class="text-center">
 
 	<div class="container">
-		<div class="row">
+		<div class="row" data-scrollreveal="enter after 0.55s">
 			<div class="page-header">
-				<h2>PHPfox helps create your custom social network</h2>
+				<h1>PHPfox helps create your custom social network</h1>
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="col-sm-3 text-center overlay-text icons">
+			<div class="col-sm-3 text-center overlay-text icons" data-scrollreveal="enter after 0.30s">
 				<div class="icon-wrapper">
 					<i class="fa fa-cloud icon-large"></i>
 				</div>
 				<h3>Businesses</h3>
 				<p>Build an Enterprise Social Network and let your employees collaborate with each other.</p>
 			</div>
-			<div class="col-sm-3 text-center overlay-text icons">
+			<div class="col-sm-3 text-center overlay-text icons" data-scrollreveal="enter after 0.40s">
 				<div class="icon-wrapper">
 					<i class="fa fa-rocket icon-large"></i>
 				</div>
 				<h3>Startups</h3>
 				<p>Create your own unique Social Website with your brand.</p>
 			</div>
-			<div class="col-sm-3 text-center overlay-text icons">
+			<div class="col-sm-3 text-center overlay-text icons" data-scrollreveal="enter after 0.50s">
 				<div class="icon-wrapper">
-					<i class="fa fa-lightbulb-o icon-large"></i>
+					<i class="fa fa-graduation-cap icon-large"></i>
 				</div>
 				<h3>Organizations</h3>
 				<p>Start your Educational Network for your school or institution, with various User Group Levels.</p>
 			</div>
 
-			<div class="col-sm-3 text-center overlay-text icons">
+			<div class="col-sm-3 text-center overlay-text icons" data-scrollreveal="enter after 0.60s">
 				<div class="icon-wrapper">
-					<i class="fa fa-lightbulb-o icon-large"></i>
+					<i class="fa fa-gamepad icon-large"></i>
 				</div>
 				<h3>Interest Groups</h3>
 				<p>Launch a private or public Common Interest Network for your hobby or cause.</p>
@@ -83,7 +95,6 @@ title: PHPfox - Start A Social Network Today
 		</div>
 
 	</div>
-
 
 </section>
 
@@ -95,7 +106,7 @@ title: PHPfox - Start A Social Network Today
 		<h2>To give you a real world experience, our demo is our very own community.</h2>
 	</div>
 
-	<div class="browser">
+	<div class="browser" data-scrollreveal="enter after 0.20s">
 		<span class="b"></span>
 		<span class="b"></span>
 		<span class="b"></span>
@@ -106,10 +117,24 @@ title: PHPfox - Start A Social Network Today
 			community.phpfox.com
 		</div>
 		<div class="browser-content">
-			<div class="overlay-bg"></div>
-			<a href="http://community.phpfox.com/" target="_blank">Launch Demo</a>
+			<div class="image-load" data-src="/assets/img/members-profile-social-network-website-with-phpfox-script.jpg"></div>
+			<div class="overlay-bg medium"></div>
+			<a href="http://community.phpfox.com/theme/demo/" target="_blank">Launch Demo</a>
 		</div>
 	</div>
+</section>
+
+<section id="pricing" class="bg-primary">
+
+	<div class="container">
+		<div class="page-header text-center">
+			<h1>Pricing</h1>
+			<h2>Choose your flavor</h2>
+		</div>
+		{% include index/pricing.html %}
+
+	</div>
+
 </section>
 
 
@@ -120,12 +145,14 @@ title: PHPfox - Start A Social Network Today
 			<h1>FAQ</h1>
 			<h2>Do you have Questions?</h2>
 		</div>
-		<div class="row">
+		<div class="row" data-scrollreveal="enter after 0.20s">
 			<div class="faq" id="faq">
-				{% include faq.html %}
+				{% include index/faq.html %}
 			</div>
 		</div>
 
 	</div>
 
 </section>
+
+{% include modals.html %}

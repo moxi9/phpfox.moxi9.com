@@ -1,0 +1,23 @@
+<nav class="build-in-menu">
+	<ul>
+		{% for feature in site.data.features %}
+		<li><a href="#{{ feature.url }}"{% if feature.url == "pages" %} class="active"{% endif %}>{{ feature.h1 }}</a></li>
+		{% endfor %}
+	</ul>
+</nav>
+
+<div class="build-in-features">
+	{% for feature in site.data.features %}
+		<section id="{{ feature.url }}">
+			<h1>{{ feature.h1 }}</h1>
+			{% for info in feature.features %}
+				<article>
+					<h1>{{ info.h1 }}</h1>
+					<p>
+						{{ info.p }}
+					</p>
+				</article>
+			{% endfor %}
+		</section>
+	{% endfor %}
+</div>

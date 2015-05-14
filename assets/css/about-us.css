@@ -1,0 +1,128 @@
+#page-about-us #content-holder {
+  padding-bottom: 0px;
+}
+#page-about-us #content-holder > section {
+  min-height: 300px;
+}
+#page-about-us #content-holder > section .background-cover {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  background-attachment: fixed;
+}
+#page-about-us #about-us .col-md-4,
+#page-about-us #about-us .col-md-8,
+#page-about-us #about-us .col-md-6,
+#page-about-us #about-us .col-md-12 {
+  height: 300px;
+  position: relative;
+  text-align: center;
+  /*background:@theme-primary;*/
+  padding-top: 30px !important;
+}
+#page-about-us #about-us .col-md-4 h3,
+#page-about-us #about-us .col-md-8 h3,
+#page-about-us #about-us .col-md-6 h3,
+#page-about-us #about-us .col-md-12 h3 {
+  /*color:#fff !important;*/
+}
+#page-about-us #about-us .col-md-6:nth-of-type(2),
+#page-about-us #about-us .col-md-12 {
+  background: #fff;
+}
+#page-about-us #about-us .col-md-6:nth-of-type(2) h3,
+#page-about-us #about-us .col-md-12 h3 {
+  color: #222 !important;
+}
+#page-about-us #about-us p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 14px;
+}
+#page-about-us #about-us.container {
+  width: auto;
+}
+#page-about-us .about-us-social h3 {
+  margin-bottom: 19px;
+}
+#page-about-us .about-us-social a,
+#page-about-us .about-us-social a:hover {
+  display: block;
+  background: #55ACEE;
+  height: 200px;
+  line-height: 200px;
+  transition: all 0.5s ease;
+  font-size: 40px;
+  color: #fff;
+  text-decoration: none;
+}
+#page-about-us .about-us-social a span,
+#page-about-us .about-us-social a:hover span {
+  display: none;
+  font-weight: 600;
+}
+#page-about-us .about-us-social a:hover {
+  transform: rotateY(180deg);
+  transition: all 0.5s ease;
+  background: #3c3c3c;
+}
+#page-about-us .about-us-social a:hover span {
+  display: block;
+  transform: rotateY(180deg);
+}
+#page-about-us .about-us-social a:hover i {
+  display: none;
+}
+#page-about-us .history {
+  height: 450px !important;
+}
+#page-about-us .history .container {
+  max-width: 500px;
+}
+#page-about-us .vision > p {
+  max-width: 500px;
+  display: block;
+  margin: auto;
+}
+#page-about-us .spotify-list {
+  position: relative;
+  background: #0E0E0E;
+}
+#page-about-us .spotify-list div.info {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 28%;
+  color: #fff;
+}
+#page-about-us .spotify-list div.info h3,
+#page-about-us .spotify-list div.info p {
+  color: #fff;
+}
+#page-about-us .spotify-list div.info p {
+  color: #cccccc;
+  font-size: 12px;
+}
+#page-about-us .embed-container {
+  position: absolute;
+  overflow: hidden;
+  right: 20px;
+  top: 20px;
+  bottom: 20px;
+  width: 60%;
+}
+#page-about-us .embed-container iframe,
+#page-about-us .embed-container object,
+#page-about-us .embed-container embed {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 400px;
+}

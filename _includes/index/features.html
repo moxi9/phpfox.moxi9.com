@@ -4,16 +4,17 @@
 		<div class="row">
 			<div class="col-sm-5 overlay-text">
 				<div class="vertical-align">
-					<h1>Be the Boss</h1>
-						<p class="p-special">Your Social Network, Your Rules.</p>
-						<p class="p-special-2">
+					<h1 data-scrollreveal="enter after 0.10s">Be the Boss</h1>
+					<h2 data-scrollreveal="enter after 0.40s">
+						<em>Your Social Network, Your Rules.</em>
 						You have the full possibility to manage your Social Website with the built-in and easy-to-use features in PHPfox.
-						</p>
+					</h2>
 				</div>
 			</div>
 		</div>
 	</div>
 
+	<div class="bg-image image-load" data-src="/assets/img/be-the-boss-of-your-online-social-network-with-phpfox.jpg"></div>
 	<div class="overlay-bg black"></div>
 
 </section>
@@ -24,15 +25,15 @@
 
 		<div class="row">
 			<div class="col-sm-5 text-center">
-				<img class="margin-top img-responsive" src="/assets/img/imac.png" alt="Generic placeholder image" data-scrollreveal="move 100px and enter from the left after 0.55s" width="429">
+				<i class="flaticon-responsive16" data-scrollreveal="enter after 0.20s"></i>
 			</div>
 			<div class="col-sm-5 col-sm-offset-1">
 				<div class="vertical-align">
-					<h2>Responsive</h2>
-					<p>
+					<h1 data-scrollreveal="enter after 0.30s">Responsive</h1>
+					<h2 data-scrollreveal="enter after 0.60s">
 						PHPfox is a Social Network Script that is both Desktop &amp; Mobile friendly.
 						Giving you the opportunity to run a modern and easy-to-use Social Website.
-					</p>
+					</h2>
 				</div>
 			</div>
 		</div>
@@ -46,14 +47,14 @@
 		<div class="row">
 			<div class="col-sm-5 col-sm-offset-1">
 				<div class="vertical-align">
-					<h2>Your Brand</h2>
-					<p>
+					<h1 data-scrollreveal="enter after 0.20s">Your Brand</h1>
+					<h2 data-scrollreveal="enter after 0.40s">
 						Present your community to your members as your own brand with your own unique concept and design.
-					</p>
+					</h2>
 				</div>
 			</div>
 			<div class="col-sm-5 text-center">
-				<img class="margin-top img-responsive" src="/assets/img/imac.png" alt="Generic placeholder image" data-scrollreveal="move 100px and enter from the right after 0.55s" width="429">
+				<i class="flaticon-paint86 flaticon-medium" data-scrollreveal="enter after 0.80s"></i>
 			</div>
 		</div>
 	</div>
@@ -68,13 +69,14 @@
 			<h2>Everything you need to start your social network.</h2>
 		</div>
 
-		<div class="row">
+		<div class="row" data-scrollreveal="enter after 0.20s">
 			<div class="col-md-12">
 				<div id="owl-example" class="owl-carousel">
 					{% for image in site.data.images %}
 					<div class="item">
 						<a href="{{ image.l }}" title="{{ image.title }}" class="popup-gallery">
 							<img src="{{ image.s }}" alt="{{ image.title }}">
+							<div class="overlay"></div>
 						</a>
 					</div>
 					{% endfor %}
@@ -82,9 +84,21 @@
 			</div>
 		</div>
 
-		<div class="row text-center feature-view-more">
-			<a href="/built-in-features/">View Full List</a>
+		<div class="row text-center feature-view-more" data-scrollreveal="enter after 0.40s">
+			<a href="/neutron/features/" class="neutron-features">View Full List</a>
 		</div>
 
 	</div>
 </section>
+
+<div class="modal fade bs-modal-lg" tabindex="-1" role="dialog" aria-labelledby="neutron-features" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title">Neutron Features</h4>
+		</div>
+		<div class="modal-content" id="neutron-features">
+
+		</div>
+	</div>
+</div>
