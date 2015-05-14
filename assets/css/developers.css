@@ -1,8 +1,53 @@
+#page-developers #content-holder {
+  padding-bottom: 0px;
+}
 #page-developers #content-holder > .container {
   width: auto;
   max-width: none;
   margin: 0px;
   padding: 0px;
+}
+#page-developers .join-now,
+#page-developers .fork-us {
+  background: #fff;
+  padding: 30px;
+}
+#page-developers .join-now a,
+#page-developers .fork-us a,
+#page-developers .join-now a:hover,
+#page-developers .fork-us a:hover {
+  background: #e74c3c;
+  display: block;
+  text-align: center;
+  padding: 10px 0px;
+  width: 200px;
+  border-radius: 30px;
+  margin: auto;
+  font-size: 30px;
+  font-weight: 200;
+  color: #fff;
+  text-decoration: none;
+}
+#page-developers .join-now a:hover,
+#page-developers .fork-us a:hover {
+  background: #a82315;
+  transition: all 0.5s ease;
+}
+#page-developers .fork-us {
+  background: transparent;
+  padding: 30px 0px 0px 0px;
+}
+#page-developers .fork-us a,
+#page-developers .fork-us a:hover {
+  margin-left: 0px;
+  font-size: 16px;
+  padding: 8px 0px;
+  background: transparent;
+  border: 3px #e74c3c solid;
+}
+#page-developers .fork-us a:hover {
+  background: #a82315;
+  border-color: #e74c3c;
 }
 .dev-banner {
   position: relative;
@@ -39,13 +84,19 @@
   line-height: 480px;
   height: 500px;
   margin: 0px;
-  color: #fff;
+  color: #cccccc;
   font-weight: 200;
   letter-spacing: 1px;
 }
+.dev-info > h1 > span {
+  font-weight: 600;
+  color: #fff;
+  margin-right: 10px;
+}
 .dev-join-now,
 .dev-join-now:hover,
-.btn:hover {
+.dev-banner .btn,
+.dev-banner .btn:hover {
   position: absolute;
   left: 50%;
   width: 200px;
@@ -57,7 +108,28 @@
   color: #fff;
   font-size: 20px;
   font-weight: 300;
+  background: #e74c3c;
 }
-.dev-join-now:hover {
-  background: #f47d30;
+.dev-join-now:hover,
+.btn:hover {
+  background: #a82315;
+}
+.cc-icons {
+  font-size: 140px;
+  position: relative;
+}
+.cc-icons i {
+  display: block;
+  color: #0096DD;
+}
+.cc-icons i:first-of-type {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 70px;
+  z-index: 2;
+  color: #3c3c3c;
+}
+.cloud-download i,
+.github-icons i {
+  font-size: 160px;
 }
