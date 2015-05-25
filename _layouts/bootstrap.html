@@ -39,11 +39,7 @@
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 		<script>
-			{% if jekyll.environment == "development" %}
-			var feedUrl = 'http://localhost/moxi9/moxi9.com/feed';
-			{% else %}
 			var feedUrl = 'http://store.phpfox.com/feed';
-			{% endif %}
 		</script>
 	</head>
 	<body id="page-{{ page.id }}" class="{% if page.id != "index" and page.id != "nebula" %}not-index-page in-fixed-mode {% endif %}{{ page.class }} base-site">
