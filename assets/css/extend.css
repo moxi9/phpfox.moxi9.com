@@ -928,20 +928,20 @@ footer.footer h3 {
   content: '/';
   display: inline-block;
   vertical-align: middle;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   margin-right: 6px;
   color: #e2e2e2;
 }
 .not-index-page .navbar-header h2,
 #page-index .navbar-header h2 {
-  vertical-align: middle;
+  vertical-align: top;
   display: inline-block;
   font-weight: 500;
   text-transform: uppercase;
   font-size: 12px;
   margin-left: 5px;
-  margin-top: 5px;
+  margin-top: 0px;
   color: #f47d30;
   line-height: 70px;
   float: none;
@@ -1403,4 +1403,39 @@ a.contact-us:hover {
 }
 #page-404 #content-holder section h1 {
   margin-bottom: 0px;
+}
+.top5 {
+  margin-top: 5px;
+}
+.top7 {
+  margin-top: 7px;
+}
+.top10 {
+  margin-top: 10px;
+}
+.top15 {
+  margin-top: 15px;
+}
+.top17 {
+  margin-top: 17px;
+}
+.top30 {
+  margin-top: 30px;
+}
+#contact-us {
+  position: fixed;
+  top: 70px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 30000;
+}
+i.the-spin {
+  position: absolute;
+  font-size: 30px;
+  left: 50%;
+  top: 50%;
+  margin-left: -15px;
+  margin-top: -15px;
 }

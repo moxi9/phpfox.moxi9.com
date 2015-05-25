@@ -53,7 +53,8 @@ $(document).ready(function() {
   magnificPopup();
 
 	$('.plans a').click(function() {
-		var url = 'https://phpfox.myshopify.com/cart/[ID]:1', t = $(this), id = t.data('product-id'), ids = id.split(':');
+		var url = 'http://shop.phpfox.com/cart/[ID]:1', t = $(this), id = t.data('product-id'), ids = id.split(':');
+		// var url = 'http://shop.phpfox.com/pages/checkout?id=[ID]&email=&name=';
 
 		// console.log(ids);
 		$('.no-install').attr('href', url.replace('[ID]', ids[0]));
@@ -456,6 +457,19 @@ function onePageScroll() {
 		return false;
 	});
 
+	if ($('#contact-us').length) {
+		var interval = setTimeout(function() {
+			// if (typeof(zE) == 'function') {
+				// clearInterval(interval);
+				// zE.activate({hideOnClose: true});
+				$('.contact-us').trigger('click');
+				$('#contact-us .the-spin').fadeOut();
+			// }
+		}, 2000);
+
+		// zE.activate({hideOnClose: true});
+	}
+
 	$('.newsletter-form .form-control').focus(function() {
 		$(this).parent().parent().find('.form-group').removeClass('hide');
 	});
@@ -505,7 +519,7 @@ function onePageScroll() {
 		if (localBlog === false) {
 			setTimeout(function() {
 				$.ajax({
-					url: 'http://localhost/moxi9/moxi9.com/feed',
+					url: feedUrl,
 					success: function(e) {
 						var html = '<ul class="unstyled">', iteration = 0;
 						for (var i in e) {
