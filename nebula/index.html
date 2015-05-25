@@ -20,7 +20,7 @@ nav_menu: <li><a href="/nebula/#welcome">Intro</a></li><li><a href="/nebula/#scr
 				</div>
 			</div>
 			<div class="col-sm-8 text-center">
-				<div class="nebula-banner">
+				<div class="nebula-banner image-load" data-src="/assets/features/nebula/phpfox-version-3-social-network-script-with-likes-and-comments-community-features.png">
 
 				</div>
 			</div>
@@ -37,10 +37,11 @@ nav_menu: <li><a href="/nebula/#welcome">Intro</a></li><li><a href="/nebula/#scr
 		<div class="row">
 			<div class="col-md-12">
 				<div id="owl-example" class="owl-carousel">
-					{% for image in site.data.images %}
+					{% for image in site.data.nebula %}
 						<div class="item">
 							<a href="{{ image.l }}" title="{{ image.title }}" class="popup-gallery">
 								<img src="{{ image.s }}" alt="{{ image.title }}">
+								<div class="overlay"></div>
 							</a>
 						</div>
 					{% endfor %}
@@ -75,7 +76,14 @@ nav_menu: <li><a href="/nebula/#welcome">Intro</a></li><li><a href="/nebula/#scr
 				</div>
 			</div>
 			<div class="col-sm-5 text-center">
-				<i class="flaticon-paint86 flaticon-medium" data-scrollreveal="move 100px and enter from the left after 0.55s"></i>
+				<div class="versus vertical-align">
+					<div class="v_3">
+						<span>v3</span>
+					</div>
+					<div class="v_4" data-scrollreveal="move 100px from bottom over 0.55s after 0.55s">
+						<span>v4</span>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -59,7 +59,12 @@
   /*color:#fff;*/
 }
 #page-nebula .nebula-banner {
-  background: red;
+  /*background:red;*/
+  border: 2px #e6e6e6 solid;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
   width: 100%;
   height: 400px;
 }
@@ -143,4 +148,40 @@
 }
 #nebula-features article.active > ul {
   display: block;
+}
+.versus {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  display: table;
+}
+.versus .v_3,
+.versus .v_4 {
+  display: block;
+  background: #3498db;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 20%;
+  left: 0px;
+  z-index: 1;
+}
+.versus .v_3 > span,
+.versus .v_4 > span {
+  font-size: 40px;
+  font-weight: 500;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  color: #fff;
+  text-align: left;
+  opacity: 0.8;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+.versus .v_4 {
+  left: 20%;
+  top: 0px;
+  z-index: 2;
+  background: #f47d30;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
 }
