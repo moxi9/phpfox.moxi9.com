@@ -52,7 +52,7 @@ $(document).ready(function() {
   owlCarousel();
   magnificPopup();
 
-	$('.plans a').click(function() {
+	$('.plans a, .get-phpfox').click(function() {
 		var url = 'http://shop.phpfox.com/cart/[ID]:1', t = $(this), id = t.data('product-id'), ids = id.split(':');
 		// var url = 'http://shop.phpfox.com/pages/checkout?id=[ID]&email=&name=';
 
