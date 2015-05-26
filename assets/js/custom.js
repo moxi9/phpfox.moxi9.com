@@ -40,8 +40,8 @@ if ($('#page-index').length || $('#page-nebula').length) {
 	$(window).scroll(checkMenu);
 }
 
-$(window).load(function(){
-    // $('.preloader').fadeOut(1000); // set duration in brackets
+$(document).ready(function(){
+    $('.preloader').fadeOut(1000); // set duration in brackets
 	var brand = $('.navbar-brand').html();
 	$('.navbar-brand').html(brand.replace('fox', '<span>fox</span>'));
     init();
