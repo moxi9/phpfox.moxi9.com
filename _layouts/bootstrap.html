@@ -14,7 +14,9 @@
 		<title>{{ page.title }}</title>
 		<link href="/assets/css/bootstrap.css" rel="stylesheet">
 		<link href="/assets/css/theme.css" rel="stylesheet">
-		{% assign current_version = 5 %}
+		{% assign current_version = 6 %}
+		{% assign _current_version = site.time | date: "%s%N" %}
+
 		<link href="/assets/css/extend.css?v={{ current_version }}" rel="stylesheet">
 
 		<link href="/assets/css/magnific-popup.css" rel="stylesheet">
@@ -44,62 +46,66 @@
 			<i class="the-spin fa fa-spin fa-circle-o-notch"></i>
 		</div>
 
-		<div class="navbar-wrapper cbp-af-header">
-			<div class="container">
+		<div id="the-header">
+			<div class="navbar-wrapper cbp-af-header">
+				<div class="container">
 
-				<div class="navbar cbp-af-inner" role="navigation">
-					<header class="navbar-header">
-						<div id="respond"><i class="fa fa-bars"></i></div>
-						<h1>
-							<a class="navbar-brand scroll nav-logo" href="/">
-								PHPfox
-							</a>
-						</h1>
-						{% if page.h2 %}
-						<h2>
-							{{ page.h2 }}
-						</h2>
-						{% endif %}
-					</header>
+					<div class="navbar cbp-af-inner" role="navigation">
+						<header class="navbar-header">
+							<div id="respond"><i class="fa fa-bars"></i></div>
+							<h1>
+								<a class="navbar-brand scroll nav-logo" href="/">
+									PHPfox
+								</a>
+							</h1>
+							{% if page.h2 %}
+							<h2>
+								{{ page.h2 }}
+							</h2>
+							{% endif %}
+						</header>
 
-					{% if page.id != "index" %}
+						{% if page.id != "index" %}
+							<nav class="navbar-collapse pull-right">
+								<ul class="nav navbar-nav">
+									{% if page.nav_menu %}
+									{{ page.nav_menu }}
+									{% endif %}
+								</ul>
+							</nav>
+						{% else %}
+
 						<nav class="navbar-collapse pull-right">
 							<ul class="nav navbar-nav">
-								{% if page.nav_menu %}
-								{{ page.nav_menu }}
-								{% endif %}
+								<li><a href="#intro">Intro</a></li>
+								<li><a href="#features">Features</a></li>
+								<li><a href="#demo">Demo</a></li>
+								<li><a href="#pricing">Pricing</a></li>
+								<li><a href="#pricing" class="get-started-link">Get Started</a></li>
 							</ul>
 						</nav>
-					{% else %}
 
-					<nav class="navbar-collapse pull-right">
-						<ul class="nav navbar-nav">
-							<li><a href="#intro">Intro</a></li>
-							<li><a href="#features">Features</a></li>
-							<li><a href="#demo">Demo</a></li>
-							<li><a href="#pricing">Pricing</a></li>
-							<li><a href="#pricing" class="get-started-link">Get Started</a></li>
-						</ul>
-					</nav>
+						{% endif %}
 
-					{% endif %}
+					</div>
 
 				</div>
-
 			</div>
 		</div>
 
-		{% if page.container != "hide" %}
-		<div id="content-holder">
-			<div class="container">
-		{% endif %}
-				{{ content }}
-		{% if page.container != "hide" %}
+		<div id="the-holder">
+			{% if page.container != "hide" %}
+			<div id="content-holder">
+				<div class="container">
+			{% endif %}
+					{{ content }}
+			{% if page.container != "hide" %}
+				</div>
 			</div>
-		</div>
-		{% endif %}
+			{% endif %}
 
-		{% include footer.html %}
+			{% include footer.html %}
+		</div>
 
 		<a href="#" class="contact-us">Any Questions?</a>
 
