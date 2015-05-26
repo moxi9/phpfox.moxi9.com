@@ -242,7 +242,7 @@ function init() {
 function fullScreenContainer() {
 	    var changeIt = function() {
 		    var screenHeight = $(window).height();
-		    if ($(window).width() <= 480) {
+		    if ($(window).width() <= 800) {
 			    return;
 		    }
 
@@ -259,7 +259,7 @@ function fullScreenContainer() {
 		    });
 	    };
 
-	if ($(window).width() > 480) {
+	if ($(window).width() > 800) {
 		changeIt();
 	}
 
