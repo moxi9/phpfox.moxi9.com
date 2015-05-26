@@ -52,6 +52,29 @@ $(document).ready(function() {
   owlCarousel();
   magnificPopup();
 
+	$('.navbar-nav a').click(function() {
+		var c = $('.navbar-collapse');
+		if (c.hasClass('collapse')) {
+			$('#respond').removeClass('active');
+			c.removeClass('collapse').removeClass('in');
+		}
+	});
+
+	$('#respond').click(function() {
+		var t = $(this), n = $('.navbar-collapse');
+
+		console.log('Clicky...');
+
+		if (t.hasClass('active')) {
+			t.removeClass('active');
+			n.removeClass('collapse').removeClass('in');
+
+			return;
+		}
+		t.addClass('active');
+		n.addClass('collapse').addClass('in');
+	});
+
 	$('.plans a, .get-phpfox').click(function() {
 		var url = 'http://shop.phpfox.com/cart/[ID]:1', t = $(this), id = t.data('product-id'), ids = id.split(':');
 		// var url = 'http://shop.phpfox.com/pages/checkout?id=[ID]&email=&name=';

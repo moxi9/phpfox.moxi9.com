@@ -1569,10 +1569,38 @@ i.the-spin {
 	margin:0px !important;
 }
 
+.navbar-header {
+	#respond {
+		display:none;
+		width:70px;
+		height:70px;
+		position:absolute;
+		right:0px;
+		top:0px;
+		cursor:pointer;
+
+		i {
+			color:#808080;
+			font-size:30px;
+			position:absolute;
+			left:50%;
+			top:50%;
+			margin-left:-12px;
+			margin-top:-15px;
+		}
+	}
+}
+
 /**
  * # Respond
  */
-@media screen and (max-width: 55em) {
+@media (max-device-width: 480px), (max-width: 480px) {
+	.navbar-header {
+		#respond {
+			display:block;
+		}
+	}
+
 	.cbp-af-header h1, .cbp-af-header .nav {
 		display:none;
 	}
@@ -1655,5 +1683,9 @@ i.the-spin {
 
 	.cbp-af-header .nav a.what-is-phpfox, .in-fixed-mode .cbp-af-header .nav a.what-is-phpfox, #page-index.in-fixed-mode .cbp-af-header .nav a.what-is-phpfox, .cbp-af-header .nav a.what-is-phpfox:hover, .in-fixed-mode .cbp-af-header .nav a.what-is-phpfox:hover, #page-index.in-fixed-mode .cbp-af-header .nav a.what-is-phpfox:hover, .cbp-af-header .nav a.get-started-link, .in-fixed-mode .cbp-af-header .nav a.get-started-link, #page-index.in-fixed-mode .cbp-af-header .nav a.get-started-link, .cbp-af-header .nav a.get-started-link:hover, .in-fixed-mode .cbp-af-header .nav a.get-started-link:hover, #page-index.in-fixed-mode .cbp-af-header .nav a.get-started-link:hover {
 		border-radius:0px;
+	}
+
+	.cbp-af-header .nav a, .cbp-af-header .nav a:hover {
+		color:#808080;
 	}
 }
