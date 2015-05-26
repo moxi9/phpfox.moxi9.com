@@ -808,9 +808,6 @@ footer.footer {
 	}
 	*/
 }
-footer.footer .footer-nav {
-  padding-top: 40px;
-}
 footer.footer .footer-nav .col-md-3 {
   margin-bottom: 30px;
 }
@@ -980,19 +977,33 @@ footer.footer h3 {
 .icons .icon-wrapper {
   background: #6f6f6f;
 }
-.social > a,
-.social > a:hover {
+.social {
+  background: #323232;
+  padding: 20px 0px;
+  margin-bottom: 30px;
+}
+.social .container {
+  position: relative;
+}
+.social .container > a,
+.social .container > a:hover {
   font-size: 20px !important;
   display: inline-block;
   height: 40px;
   width: 40px;
   color: #fff;
   border-radius: 50%;
-  margin: 0px 5px 20px 0px;
+  margin: 0px 5px 0px 0px;
+  text-align: center;
 }
-.social > a > i,
-.social > a:hover > i {
+.social .container > a > i,
+.social .container > a:hover > i {
   margin-top: 11px;
+}
+.social .container > a:hover {
+  background: #fff;
+  color: #222;
+  transition: all 0.5s ease;
 }
 .social .s-twitter {
   background: #55ACEE;
@@ -1099,7 +1110,19 @@ a.contact-us:hover {
   border-color: transparent;
 }
 .footer-contact {
-  margin-top: 20px;
+  position: absolute;
+  right: 15px;
+  top: 2px;
+}
+.footer-contact .btn-default,
+.footer-contact .btn-default:hover {
+  background: #fff;
+  color: #808080;
+}
+.footer-contact .btn-default:hover {
+  background: #f47d30;
+  color: #fff;
+  transition: all 0.5s ease;
 }
 .newsletter-form {
   /*
@@ -1450,10 +1473,12 @@ i.the-spin {
   display: none;
   width: 70px;
   height: 70px;
-  position: absolute;
+  position: fixed;
   right: 0px;
   top: 0px;
   cursor: pointer;
+  z-index: 100000000;
+  background: #f6f6f6;
 }
 .navbar-header #respond i {
   color: #808080;
@@ -1463,6 +1488,9 @@ i.the-spin {
   top: 50%;
   margin-left: -12px;
   margin-top: -15px;
+}
+.navbar-collapse {
+  padding-right: 0px;
 }
 /**
  * # Respond

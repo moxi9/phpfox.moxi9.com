@@ -56,23 +56,26 @@ $(document).ready(function() {
 		var c = $('.navbar-collapse');
 		if (c.hasClass('collapse')) {
 			$('#respond').removeClass('active');
+			$('.navbar-nav').hide();
 			c.removeClass('collapse').removeClass('in');
 		}
 	});
 
 	$('#respond').click(function() {
-		var t = $(this), n = $('.navbar-collapse');
+		var t = $(this), n = $('.navbar-collapse'), b = $('.navbar-nav');
 
 		// console.log('Clicky...');
 
 		if (t.hasClass('active')) {
 			t.removeClass('active');
 			n.removeClass('collapse').removeClass('in');
+			b.hide();
 
 			return;
 		}
 		t.addClass('active');
 		n.addClass('collapse').addClass('in');
+		b.show();
 	});
 
 	$('.plans a, .get-phpfox').click(function() {
