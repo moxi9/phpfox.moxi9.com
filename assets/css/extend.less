@@ -869,6 +869,10 @@ footer.footer {
 
 	.footer-nav {
 		padding-top:40px;
+
+		.col-md-3 {
+			margin-bottom:30px;
+		}
 	}
 
 	.footer-copyright {
@@ -1559,4 +1563,96 @@ i.the-spin {
 	top:50%;
 	margin-left:-15px;
 	margin-top:-15px;
+}
+
+.cbp-af-header h1 a, .cbp-af-header h1 a:hover {
+	margin:0px !important;
+}
+
+/**
+ * # Respond
+ */
+@media screen and (max-width: 55em) {
+	.cbp-af-header h1, .cbp-af-header .nav {
+		display:none;
+	}
+
+	.cbp-af-header .in .nav {
+		display:block;
+		position:fixed;
+		top:70px;
+		left:0px;
+		right:0px;
+		bottom:0px;
+		z-index:1000;
+		background:#fff;
+		border-top:1px #dfdfdf solid;
+	}
+
+	.row {
+		margin-left:0px;
+		margin-right:0px;
+	}
+
+	[class^="flaticon-"]::before, [class*=" flaticon-"]::before, [class^="flaticon-"]::after, [class*=" flaticon-"]::after {
+	    font-size:4em;
+    }
+
+	#get-started .learn-more > span {
+		display:block;
+		margin:30px 0px 20px 0px;
+	}
+
+	.navbar {
+		border:0px;
+	}
+
+	.container {
+		padding:20px;
+		margin:0px 10px;
+		width:auto;
+	}
+
+	.navbar-collapse {
+		width:100%;
+		background:#dfdfdf;
+	}
+
+	.cbp-af-header {
+		position:relative;
+		height:70px;
+
+		> .container {
+			margin:0px;
+			padding:0px;
+			background:#fff;
+			position:fixed;
+			top:0px;
+			left:0px;
+			right:0px;
+			height:70px;
+			z-index:1000000;
+		}
+	}
+
+	.not-index-page .navbar-header h1, #page-index .navbar-header h1 {
+		margin-left:10px;
+	}
+
+	.cbp-af-header h1 a, .cbp-af-header h1 a:hover {
+		color:#222;
+	}
+
+	.navbar-toggle {
+		margin-right:10px;
+		color:#808080;
+	}
+
+	.navbar-toggle .icon-bar {
+		background:#808080;
+	}
+
+	.cbp-af-header .nav a.what-is-phpfox, .in-fixed-mode .cbp-af-header .nav a.what-is-phpfox, #page-index.in-fixed-mode .cbp-af-header .nav a.what-is-phpfox, .cbp-af-header .nav a.what-is-phpfox:hover, .in-fixed-mode .cbp-af-header .nav a.what-is-phpfox:hover, #page-index.in-fixed-mode .cbp-af-header .nav a.what-is-phpfox:hover, .cbp-af-header .nav a.get-started-link, .in-fixed-mode .cbp-af-header .nav a.get-started-link, #page-index.in-fixed-mode .cbp-af-header .nav a.get-started-link, .cbp-af-header .nav a.get-started-link:hover, .in-fixed-mode .cbp-af-header .nav a.get-started-link:hover, #page-index.in-fixed-mode .cbp-af-header .nav a.get-started-link:hover {
+		border-radius:0px;
+	}
 }
