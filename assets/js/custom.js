@@ -41,7 +41,7 @@ if ($('#page-index').length || $('#page-nebula').length) {
 }
 
 $(document).ready(function(){
-    $('.preloader').fadeOut(1000); // set duration in brackets
+    // $('.preloader').fadeOut(1000); // set duration in brackets
 	var brand = $('.navbar-brand').html();
 	$('.navbar-brand').html(brand.replace('fox', '<span>fox</span>'));
     init();
