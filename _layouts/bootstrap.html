@@ -14,11 +14,7 @@
 		<title>{{ page.title }}</title>
 		<link href="/assets/css/bootstrap.css" rel="stylesheet">
 		<link href="/assets/css/theme.css" rel="stylesheet">
-		{% if jekyll.environment == "development" %}
-		{% assign current_version = site.time | date: "%s%N" %}
-		{% else %}
-			{% assign current_version = site.version %}
-		{% endif %}
+		{% assign current_version = 2 %}
 		<link href="/assets/css/extend.css?v={{ current_version }}" rel="stylesheet">
 
 		<link href="/assets/css/magnific-popup.css" rel="stylesheet">
