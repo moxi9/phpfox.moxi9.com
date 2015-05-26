@@ -54,28 +54,31 @@ $(document).ready(function() {
 
 	$('.navbar-nav a').click(function() {
 		var c = $('.navbar-collapse');
-		if (c.hasClass('collapse')) {
+
+		if ($('#respond').hasClass('active')) {
 			$('#respond').removeClass('active');
 			$('.navbar-nav').hide();
-			c.removeClass('collapse').removeClass('in');
+			// $('#the-holder').show();
+			// c.removeClass('collapse').removeClass('in');
 		}
 	});
 
 	$('#respond').click(function() {
 		var t = $(this), n = $('.navbar-collapse'), b = $('.navbar-nav');
 
-		// console.log('Clicky...');
-
 		if (t.hasClass('active')) {
 			t.removeClass('active');
-			n.removeClass('collapse').removeClass('in');
+			// n.removeClass('collapse').removeClass('in');
+			// $('#the-holder').show();
 			b.hide();
 
 			return;
 		}
+
 		t.addClass('active');
-		n.addClass('collapse').addClass('in');
+		// n.addClass('collapse').addClass('in');
 		b.show();
+		// $('#the-holder').hide();
 	});
 
 	$('.plans a, .get-phpfox').click(function() {
@@ -239,6 +242,10 @@ function init() {
 function fullScreenContainer() {
 	    var changeIt = function() {
 		    var screenHeight = $(window).height();
+		    if ($(window).width() <= 480) {
+			    return;
+		    }
+
 		    $('section#get-started').css('min-height', screenHeight + 'px');
 		    var obj = $('section#get-started .container .row');
 		    obj.css({
@@ -252,7 +259,7 @@ function fullScreenContainer() {
 		    });
 	    };
 
-	if ($(window).height() > 400) {
+	if ($(window).width() > 480) {
 		changeIt();
 	}
 

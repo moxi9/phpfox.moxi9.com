@@ -24,6 +24,8 @@ function readCookie(name) {
 }
 
 $(document).ready(function() {
+	return;
+
 	var cookieName = 'welcome3';
 
 	if (readCookie(cookieName)) {

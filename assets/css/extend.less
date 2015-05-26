@@ -415,7 +415,7 @@ a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.acti
 
 #get-started {
 	/*height:600px;*/
-	min-height:500px;
+	min-height:700px;
 	/*
 	.item {
 		> .image-load {
@@ -922,42 +922,44 @@ footer.footer {
 	transition: all 0.50s ease;
 }
 
-.in-fixed-mode, #page-index.in-fixed-mode {
-	.navbar .navbar-nav .current > a {
-		color:#000 !important;
-	}
+@media (min-width:480px) {
+	.in-fixed-mode, #page-index.in-fixed-mode {
+		.navbar .navbar-nav .current > a {
+			color:#000 !important;
+		}
 
-	.nav {
-		.get-started-link {
+		.nav {
+			.get-started-link {
+				display:block;
+			}
+		}
+
+		.navbar-brand {
+			color:lighten(@theme-primary, 8%);
+		}
+
+		.cbp-af-header {
+			position:fixed;
+			background:#fff;
+			border-bottom:1px #dfdfdf solid;
+			transition: all 0.50s ease;
+		}
+
+		.cbp-af-header .nav a, .cbp-af-header .nav a:hover {
+			color:lighten(#808080, 20%);
+		}
+
+		.cbp-af-header .nav a:hover {
+			color:#222;
+		}
+
+		.nav-extra {
 			display:block;
 		}
-	}
 
-	.navbar-brand {
-		color:lighten(@theme-primary, 8%);
-	}
-
-	.cbp-af-header {
-		position:fixed;
-		background:#fff;
-		border-bottom:1px #dfdfdf solid;
-		transition: all 0.50s ease;
-	}
-
-	.cbp-af-header .nav a, .cbp-af-header .nav a:hover {
-		color:lighten(#808080, 20%);
-	}
-
-	.cbp-af-header .nav a:hover {
-		color:#222;
-	}
-
-	.nav-extra {
-		display:block;
-	}
-
-	#get-started-form {
-		transition: all 0.50s ease;
+		#get-started-form {
+			transition: all 0.50s ease;
+		}
 	}
 }
 
@@ -1604,7 +1606,6 @@ i.the-spin {
 		top:0px;
 		cursor:pointer;
 		z-index:100000000;
-		background:#f6f6f6;
 
 		i {
 			color:#808080;
@@ -1626,26 +1627,32 @@ i.the-spin {
  * # Respond
  */
 @media (max-device-width: 480px), (max-width: 480px) {
+
+	.navbar .navbar-nav .current > a, .navbar .navbar-nav .current > a:hover {
+		color:#222 !important;
+	}
+
 	.navbar-header {
+		/*height:70px;*/
+		background:transparent;
+
 		#respond {
 			display:block;
 		}
 	}
 
-	.cbp-af-header h1, .cbp-af-header .nav {
+	.cbp-af-header .nav {
 		display:none;
-	}
-
-	.cbp-af-header .in .nav {
-		display:block;
 		position:fixed;
-		top:70px;
+		height:100%;
+		top:0px;
 		left:0px;
 		right:0px;
 		bottom:0px;
-		z-index:1000;
+		z-index:10000000;
 		background:#fff;
 		border-top:1px #dfdfdf solid;
+		padding-top:60px;
 	}
 
 	.row {
@@ -1678,19 +1685,23 @@ i.the-spin {
 	}
 
 	.cbp-af-header {
-		position:relative;
-		height:70px;
+		position:static;
+		height:auto;
+		z-index:1000000;
+		background:#fff;
+		/*height:70px;*/
 
 		> .container {
 			margin:0px;
 			padding:0px;
-			background:#fff;
-			position:fixed;
+			/*position:fixed;*/
+			/*
 			top:0px;
 			left:0px;
 			right:0px;
-			height:70px;
 			z-index:1000000;
+			*/
+			position:static;
 		}
 	}
 
@@ -1717,6 +1728,32 @@ i.the-spin {
 	}
 
 	.cbp-af-header .nav a, .cbp-af-header .nav a:hover {
-		color:#808080;
+		color:#808080 !important;
 	}
+
+	#get-started > .item {
+		background-attachment:scroll;
+	}
+
+	.social {
+		text-align:center;
+	}
+
+	.footer-contact {
+		position:static;
+		margin-bottom:40px;
+	}
+
+	.modal {
+		z-index:1000000001;
+	}
+
+    .modal-footer {
+	    text-align:center;
+
+	    .btn {
+		    display:block;
+		    margin-top:15px;
+	    }
+    }
 }
