@@ -1517,6 +1517,7 @@ i.the-spin {
   .navbar-toggle {
     margin-right: 10px;
     color: #808080;
+    background: #0c0c0c;
   }
   .navbar-toggle .icon-bar {
     background: #808080;
