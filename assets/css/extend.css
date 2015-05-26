@@ -1450,10 +1450,12 @@ i.the-spin {
   display: none;
   width: 70px;
   height: 70px;
-  position: absolute;
+  position: fixed;
   right: 0px;
   top: 0px;
   cursor: pointer;
+  z-index: 100000000;
+  background: #f6f6f6;
 }
 .navbar-header #respond i {
   color: #808080;
