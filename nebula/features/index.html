@@ -17,7 +17,7 @@
 		
 		
 
-		<link href="/assets/css/extend.css?v=14" rel="stylesheet">
+		<link href="/assets/css/extend.css?v=16" rel="stylesheet">
 
 		<link href="/assets/css/magnific-popup.css" rel="stylesheet">
 
@@ -31,7 +31,7 @@
 
 		<script src="/assets/js/modernizr.custom.js"></script>
 		
-			<link href="/assets/css/nebula.css?v=14" rel="stylesheet">
+			<link href="/assets/css/nebula.css?v=16" rel="stylesheet">
 		
 
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
@@ -1392,15 +1392,17 @@
 		<script src="/assets/js/imagesloaded.pkgd.min.js" defer="defer"></script>
 		<script src="/assets/js/isotope.min.js" defer="defer"></script>
 		<script src="/assets/js/jquery.magnific-popup.min.js" defer="defer"></script>
-		<script src="/assets/js/custom.js"></script>
+		<script src="/assets/js/custom.js?v=16"></script>
 		<script>
 			$(document).ready(function(){
 				isotope();
-			});
-			window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("//assets.zendesk.com/embeddable_framework/main.js","phpfox.zendesk.com");
-			zE(function() {
-				zE.hide();
-				$('.contact-us').css('visibility', 'visible');
+				setTimeout(function() {
+					window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("//assets.zendesk.com/embeddable_framework/main.js","phpfox.zendesk.com");
+					zE(function() {
+						zE.hide();
+						$('.contact-us').css('visibility', 'visible');
+					});
+				}, 800);
 			});
 		</script>
 	</body>
