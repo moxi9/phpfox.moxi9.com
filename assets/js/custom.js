@@ -63,7 +63,7 @@ $(document).ready(function() {
 	$('#respond').click(function() {
 		var t = $(this), n = $('.navbar-collapse');
 
-		console.log('Clicky...');
+		// console.log('Clicky...');
 
 		if (t.hasClass('active')) {
 			t.removeClass('active');
