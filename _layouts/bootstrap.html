@@ -14,7 +14,7 @@
 		<title>{{ page.title }}</title>
 		<link href="/assets/css/bootstrap.css" rel="stylesheet">
 		<link href="/assets/css/theme.css" rel="stylesheet">
-		{% assign current_version = 8 %}
+		{% assign current_version = 10 %}
 		{% assign _current_version = site.time | date: "%s%N" %}
 
 		<link href="/assets/css/extend.css?v={{ current_version }}" rel="stylesheet">
@@ -41,6 +41,10 @@
 		</script>
 	</head>
 	<body id="page-{{ page.id }}" class="{% if page.id != "index" and page.id != "nebula" %}not-index-page in-fixed-mode {% endif %}{{ page.class }} base-site">
+
+		<div class="preloader">
+			<i class="the-spin fa fa-spin fa-circle-o-notch"></i>
+		</div>
 
 		<div id="the-header">
 			<div class="navbar-wrapper cbp-af-header">
