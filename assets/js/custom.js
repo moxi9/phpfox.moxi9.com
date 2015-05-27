@@ -52,6 +52,8 @@ $(document).ready(function() {
   owlCarousel();
   magnificPopup();
 
+	// window.scrollReveal = new scrollReveal();
+
 	$('.navbar-nav a').click(function() {
 		var c = $('.navbar-collapse');
 
@@ -304,7 +306,7 @@ function tooltips() {
 
 /* --- scrollReveal ------------------- */
 
-window.scrollReveal = new scrollReveal();
+// window.scrollReveal = new scrollReveal();
   
 
 

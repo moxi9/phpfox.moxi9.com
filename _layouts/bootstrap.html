@@ -4,17 +4,21 @@
 	<!--[if IE 10]> <html class="ie10" lang="en"> <![endif]-->
 	<!--[if (gt IE 10)|!(IE)]> <html lang="en"> <![endif]-->
 	<head>
+		<title>{{ page.title }}</title>
+
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="{{ page.description }}">
+		<meta property="og:description" content="{{ page.description }}">
 		<meta name="keywords" content="{{ page.keywords }}">
-		<link rel="shortcut icon" href="ico/favicon.png">
+		<meta property="og:title" content="{{ page.title }}">
+		<meta property="og:image" content="//da1a3suzxtd3z.cloudfront.net/logos/phpfox.png">
 
-		<title>{{ page.title }}</title>
+		<link rel="image_src" href="//da1a3suzxtd3z.cloudfront.net/logos/phpfox.png">
 		<link href="/assets/css/bootstrap.css" rel="stylesheet">
 		<link href="/assets/css/theme.css" rel="stylesheet">
-		{% assign current_version = 12 %}
+		{% assign current_version = 16 %}
 		{% assign _current_version = site.time | date: "%s%N" %}
 
 		<link href="/assets/css/extend.css?v={{ current_version }}" rel="stylesheet">
@@ -115,7 +119,7 @@
 		<script src="/assets/js/imagesloaded.pkgd.min.js" defer="defer"></script>
 		<script src="/assets/js/isotope.min.js" defer="defer"></script>
 		<script src="/assets/js/jquery.magnific-popup.min.js" defer="defer"></script>
-		<script src="/assets/js/custom.js"></script>
+		<script src="/assets/js/custom.js?v={{ current_version }}"></script>
 		<script>
 			$(document).ready(function(){
 				isotope();
@@ -124,7 +128,6 @@
 					zE(function() {
 						zE.hide();
 						$('.contact-us').css('visibility', 'visible');
-
 					});
 				}, 800);
 			});
