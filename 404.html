@@ -3,6 +3,15 @@ title: Page not found
 layout: bootstrap
 id: 404
 ---
+<script>
+	(function() {
+		var t = window.location.pathname;
+
+		if (t == '/site_license.php') {
+			window.location.href = '/terms/license/premium/simple/';
+		}
+	})();
+</script>
 <div class="page-not-found">
 	<textarea readonly="true">
  ___   ___  ________  ___   ___
