@@ -25,6 +25,7 @@ function checkMenu() {
 	}
 	else {
 		$('body').addClass('in-fixed-mode');
+		$('.the-pricing').addClass('get-started-link');
 		if (dropForm === false) {
 			dropForm = true;
 			$('#get-started-form').animate({
@@ -40,19 +41,39 @@ if ($('#page-index').length || $('#page-nebula').length) {
 	$(window).scroll(checkMenu);
 }
 
+/*
 $(document).ready(function(){
     // $('.preloader').fadeOut(1000); // set duration in brackets
 	var brand = $('.navbar-brand').html();
 	$('.navbar-brand').html(brand.replace('fox', '<span>fox</span>'));
     init();
 });
+*/
 
-$(document).ready(function() {
-  fullScreenContainer();
-  owlCarousel();
-  magnificPopup();
+function siteReady() {
+	if ($('#page-index').length && !$('#page-index').hasClass('index-is-built')) {
+		$('#page-index').addClass('index-is-built');
+		$.ajax({
+			url: '/sections.html',
+			success: function(e) {
+				$('#sections').replaceWith(e);
+				$('#the-header, #the-holder').css('visibility', 'visible');
+				siteReady();
+			}
+		});
 
-	// window.scrollReveal = new scrollReveal();
+		return;
+	}
+
+	fullScreenContainer();
+	owlCarousel();
+	magnificPopup();
+
+	var brand = $('.navbar-brand').html();
+	$('.navbar-brand').html(brand.replace('fox', '<span>fox</span>'));
+	init();
+
+	window.sr = new scrollReveal();
 
 	$('.navbar-nav a').click(function() {
 		var c = $('.navbar-collapse');
@@ -60,8 +81,6 @@ $(document).ready(function() {
 		if ($('#respond').hasClass('active')) {
 			$('#respond').removeClass('active');
 			$('.navbar-nav').hide();
-			// $('#the-holder').show();
-			// c.removeClass('collapse').removeClass('in');
 		}
 	});
 
@@ -85,7 +104,6 @@ $(document).ready(function() {
 
 	$('.plans a, .get-phpfox').click(function() {
 		var url = 'http://shop.phpfox.com/cart/[ID]:1', t = $(this), id = t.data('product-id'), ids = id.split(':');
-		// var url = 'http://shop.phpfox.com/pages/checkout?id=[ID]&email=&name=';
 
 		// console.log(ids);
 		$('.no-install').attr('href', url.replace('[ID]', ids[0]));
@@ -152,17 +170,6 @@ $(document).ready(function() {
 
 	$('#carousel-example-generic').prepend(html);
 
-	/*
-	$('.get-started-link').click(function() {
-		dropForm = false;
-
-		$('#get-started-form').css('margin-bottom', 0);
-		$('#name').focus();
-
-		return false;
-	});
-	*/
-
 	$('.more').click(function() {
 		var b = $('body');
 
@@ -185,12 +192,6 @@ $(document).ready(function() {
 		return false;
 	});
 
-	/*
-	setTimeout(function() {
-
-	}, 2000);
-	*/
-
 	$('.nebula-features').click(function() {
 		$('.bs-modal-lg').modal({
 			show: true
@@ -212,7 +213,9 @@ $(document).ready(function() {
 
 		return false;
 	});
-});
+};
+
+$(document).ready(siteReady);
 
 function builtInMenu() {
 	$('.build-in-menu a').click(function() {
@@ -277,37 +280,18 @@ function owlCarousel() {
       lazyLoad : true,
       items: 3,
       theme: "owl-theme-main"
-    }); 
-
-	/*
-    $("#get-started").owlCarousel({
-      lazyLoad: true,
-      lazyEffect: "fade",
-      singleItem: true,
-      navigation: true,
-      navigationText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-      slideSpeed : 450,
-      pagination: false,
-      transitionStyle: "fade",
-      theme: "owl-theme-featured"
-      
     });
-    */
-}
-
-
+};
 
 /* --- Tooltips ------------------- */
 
 function tooltips() {
   $('.tooltips').tooltip(); 
-}
-
+};
 
 /* --- scrollReveal ------------------- */
 
 // window.scrollReveal = new scrollReveal();
-  
 
 
 /* --- magnific popup ------------------- */
@@ -396,9 +380,7 @@ function magnificPopup() {
 		removalDelay: 300,
 		mainClass: 'my-mfp-slide-bottom'
 	});
-}
-
-
+};
 
 /* --- Isotope ------------------- */
 
@@ -423,8 +405,7 @@ function isotope() {
    $(this).addClass('active');
  });
 
-}
-
+};
 
 /* --- Scroll to Anchor ------------------- */
 
@@ -444,29 +425,45 @@ function scrollAnchor() {
     }
   });
   
-}
+};
 
 /* --- One Page Scroll ------------------- */
 
 function onePageScroll() {
-  $('.nav').onePageNav({
-      currentClass: 'current',
-      changeHash: false,
-      scrollSpeed: 650,
-      scrollOffset: 30,
-      scrollThreshold: 0.5,
-      filter: ':not(.get-started-link)',
-      easing: 'swing',
-      begin: function() {
-          //I get fired when the animation is starting
-      },
-      end: function() {
-          //I get fired when the animation is ending
-      },
-      scrollChange: function($currentListItem) {
-          //I get fired when you enter a section and I pass the list item of the section
-      }
-  });
+
+	if ($('#page-index').length || $('#page-nebula').length) {
+		if (!$('#page-nebula').length) {
+			$('.nav a').each(function() {
+				var t = $(this), url = t.attr('href');
+
+				url = '#' + url.replace('/', '').replace('/', '');
+				if (url == '#') {
+					url = '#intro'
+				}
+
+				t.attr('href', url);
+			});
+		}
+
+		$('.nav').onePageNav({
+			currentClass: 'current',
+			changeHash: false,
+			scrollSpeed: 650,
+			scrollOffset: 30,
+			scrollThreshold: 0.5,
+			// filter: ':not(.get-started-link)',
+			easing: 'swing',
+			begin: function() {
+				//I get fired when the animation is starting
+			},
+			end: function() {
+				//I get fired when the animation is ending
+			},
+			scrollChange: function($currentListItem) {
+				//I get fired when you enter a section and I pass the list item of the section
+			}
+		});
+	}
 
 	$('.view-all-faq').click(function() {
 		$('.list-group-item').addClass('active');
@@ -577,20 +574,6 @@ function onePageScroll() {
 			}, 800);
 		}
 	}
-};
-
-function isScrolledIntoView(elem)
-{
-	var $elem = $(elem);
-	var $window = $(window);
-
-	var docViewTop = $window.scrollTop();
-	var docViewBottom = docViewTop + $window.height();
-
-	var elemTop = $elem.offset().top;
-	var elemBottom = elemTop + $elem.height();
-
-	return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 };
 
 $(document).ready(function() {

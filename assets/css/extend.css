@@ -774,7 +774,6 @@ a:focus {
 	*/
 }
 .cbp-af-header .nav .get-started-link {
-  display: none;
   transition: all 0.50s ease;
 }
 .cbp-af-header .nav .get-started-link .btn-primary,
@@ -1125,9 +1124,8 @@ a.contact-us:hover {
   margin-left: 10px;
 }
 .footer-contact .btn-default:hover {
-  background: #000;
   color: #fff;
-  border-color: #f47d30;
+  border-color: #fff;
   transition: all 0.5s ease;
 }
 .newsletter-form {
@@ -1624,4 +1622,12 @@ i.the-spin {
     display: block;
     margin-top: 15px;
   }
+}
+#page-demo #the-holder,
+#page-pricing #the-holder {
+  padding-top: 70px;
+}
+#page-index #the-header,
+#page-index #the-holder {
+  visibility: hidden;
 }
