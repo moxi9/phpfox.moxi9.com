@@ -1118,12 +1118,16 @@ a.contact-us:hover {
 }
 .footer-contact .btn-default,
 .footer-contact .btn-default:hover {
-  background: #fff;
+  background: transparent;
+  border: 1px #808080 solid;
   color: #808080;
+  display: inline-block;
+  margin-left: 10px;
 }
 .footer-contact .btn-default:hover {
-  background: #f47d30;
+  background: #000;
   color: #fff;
+  border-color: #f47d30;
   transition: all 0.5s ease;
 }
 .newsletter-form {
