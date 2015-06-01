@@ -1198,13 +1198,17 @@ a.contact-us:hover {
 	top:2px;
 
 	.btn-default, .btn-default:hover {
-		background:#fff;
+		background:transparent;
+		border:1px #808080 solid;
 		color:#808080;
+		display:inline-block;
+		margin-left:10px;
 	}
 
 	.btn-default:hover {
-		background:@theme-cta;
+		background:#000;
 		color:#fff;
+		border-color:@theme-cta;
 		transition:@transition;
 	}
 }

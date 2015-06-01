@@ -1,6 +1,6 @@
-# PHPfox License Agreement
+# PHPfox Premium License Agreement
 
-This PHPfox LicenseAgreement ("Agreement") is a legal agreement between you and PHPfox ("PHPfox") for the licensing of the PHPfox software, which includes computer software and any associated media ("Software").
+This PHPfox License Agreement ("Agreement") is a legal agreement between you and PHPfox ("PHPfox") for the licensing of the PHPfox software, which includes computer software and any associated media ("Software").
 
 PHPfox, its source code and files are original works exclusively owned by PHPfox and subject to copyright laws and international copyright treaties, as well as other intellectual property laws and treaties.
 
