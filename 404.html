@@ -88,7 +88,16 @@
 			<div id="content-holder">
 				<div class="container">
 			
-					<div class="page-not-found">
+					<script>
+	(function() {
+		var t = window.location.pathname;
+
+		if (t == '/site_license.php') {
+			window.location.href = '/terms/license/premium/simple/';
+		}
+	})();
+</script>
+<div class="page-not-found">
 	<textarea readonly="true">
  ___   ___  ________  ___   ___
 |\  \ |\  \|\   __  \|\  \ |\  \
@@ -102,7 +111,6 @@
 		<h1>Page Not Found</h1>
 	</section>
 </div>
-
 			
 				</div>
 			</div>
