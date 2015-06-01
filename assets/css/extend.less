@@ -835,7 +835,6 @@ a, a:hover, a:focus {
 	*/
 
 	.get-started-link {
-		display:none;
 		transition: all 0.50s ease;
 
 		.btn-primary, .btn-primary:hover, .btn, .btn:hover, .btn:focus, .btn:active, .btn-primary:focus, .btn-primary:active {
@@ -1206,9 +1205,8 @@ a.contact-us:hover {
 	}
 
 	.btn-default:hover {
-		background:#000;
 		color:#fff;
-		border-color:@theme-cta;
+		border-color:#fff;
 		transition:@transition;
 	}
 }
@@ -1760,4 +1758,16 @@ i.the-spin {
 		    margin-top:15px;
 	    }
     }
+}
+
+#page-demo, #page-pricing {
+	#the-holder {
+		padding-top:70px;
+	}
+}
+
+#page-index {
+	#the-header, #the-holder {
+		visibility:hidden;
+	}
 }

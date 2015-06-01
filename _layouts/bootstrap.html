@@ -75,25 +75,24 @@
 							{% endif %}
 						</header>
 
-						{% if page.id != "index" %}
+						{% if page.show_main_nav %}
 							<nav class="navbar-collapse pull-right">
 								<ul class="nav navbar-nav">
-									{% if page.nav_menu %}
-									{{ page.nav_menu }}
-									{% endif %}
+									<li><a href="/">Intro</a></li>
+									<li><a href="/features/">Features</a></li>
+									<li><a href="/demo/">Demo</a></li>
+									<li><a href="/pricing/" class="get-started-link">Get Started</a></li>
 								</ul>
 							</nav>
 						{% else %}
 
-						<nav class="navbar-collapse pull-right">
-							<ul class="nav navbar-nav">
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#features">Features</a></li>
-								<li><a href="#demo">Demo</a></li>
-								<li><a href="#pricing">Pricing</a></li>
-								<li><a href="#pricing" class="get-started-link">Get Started</a></li>
-							</ul>
-						</nav>
+							<nav class="navbar-collapse pull-right">
+								<ul class="nav navbar-nav">
+									{% if page.nav_menu %}
+										{{ page.nav_menu }}
+									{% endif %}
+								</ul>
+							</nav>
 
 						{% endif %}
 
@@ -143,5 +142,12 @@
 				}, 800);
 			});
 		</script>
+		{% if page.id == "index" %}
+		<style type="text/css">
+			#the-header, #the-holder {
+				visibility:visible !important;
+			}
+		</style>
+		{% endif %}
 	</body>
 </html>
