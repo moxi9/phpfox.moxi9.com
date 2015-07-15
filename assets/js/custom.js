@@ -534,7 +534,8 @@ function onePageScroll() {
 	}
 
 	var b = $('.latest-blogs');
-	var key = 'latest_blogs_' + (new Date()).getDate(), localBlog = false;
+	var d = new Date();
+	var key = 'latest_blogs_' + d.getDate() + d.getMonth() + d.getYear(), localBlog = false;
 	if (b.length && !b.hasClass('built')) {
 		b.addClass('built');
 

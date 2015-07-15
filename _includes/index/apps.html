@@ -1,0 +1,23 @@
+<section id="apps" class="light">
+	<div class="container">
+
+		<div class="page-header text-center" data-sr="enter right and move 50px after 0.9s">
+			<h1>App Store</h1>
+			<h2>Expand your community with apps from our store that you can easily install direct from your Admin Control Panel.</h2>
+		</div>
+
+		<div class="apps" data-sr="enter bottom and move 150px after 0.8s">
+		{% for app in site.data.apps %}
+			<article>
+				<h1><a href="#"><span>{{ app.name }}</span></a></h1>
+				<div class="image-load" data-src="{{ app.image }}"></div>
+			</article>
+		{% endfor %}
+		</div>
+
+		<div class="row text-center feature-view-more" data-sr="enter after 0.40s">
+			<a href="http://store.phpfox.com/" target="_blank">View App Store</a>
+		</div>
+
+	</div>
+</section>

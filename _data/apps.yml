@@ -1,0 +1,24 @@
+
+- name: SMS Captcha
+  image: http://d2h79mkp7etn4r.cloudfront.net/icon/2015/07/ae5c525be08bb5022cda99cc1d82af47.png
+
+- name: Shoutbox
+  image: http://d2h79mkp7etn4r.cloudfront.net/icon/2015/07/f95347e982e1f098f4611c2afc8aeb18.png
+
+- name: Amazon CDN
+  image: http://d2h79mkp7etn4r.cloudfront.net/icon/2015/07/cddb0d575c0ce3362f1b7b1a1fe0ea14.png
+
+- name: Redis Cache
+  image: http://d2h79mkp7etn4r.cloudfront.net/icon/2015/07/1782877244c7de0e302473b9bd3130b3.png
+
+- name: Featured Users
+  image: http://d2h79mkp7etn4r.cloudfront.net/icon/2015/07/1b08135d201f181416d072251f2f4f82.png
+
+- name: reCAPTCHA
+  image: http://d2h79mkp7etn4r.cloudfront.net/icon/2015/07/c2fc96ec4795f01d3222376a5556c62b.png
+
+- name: Facebook Login
+  image: http://d2h79mkp7etn4r.cloudfront.net/icon/2015/06/1a3a613ef88031af4b687d48b6a3f752.png
+
+- name: Video Feed
+  image: http://d2h79mkp7etn4r.cloudfront.net/icon/2015/06/fd24a3c803893f957c2313fe2269ca56.png
