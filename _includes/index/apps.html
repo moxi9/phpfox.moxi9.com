@@ -9,7 +9,7 @@
 		<div class="apps" data-sr="enter bottom and move 150px after 0.8s">
 		{% for app in site.data.apps %}
 			<article>
-				<h1><a href="#"><span>{{ app.name }}</span></a></h1>
+				<h1><a href="{{ app.link }}" target="_blank"><span>{{ app.name }}</span></a></h1>
 				<div class="image-load" data-src="{{ app.image }}"></div>
 			</article>
 		{% endfor %}
