@@ -86,7 +86,7 @@
   - h1: Subscriptions
     p: With over 330 ways (and growing) to control what a user can or can't do on your site you can easily create subscription plans and charge your users to upgrade in order to use certain features. Learn more
   - h1: Payment Gateways API
-    p: We have included with our product support for both PayPal and 2checkout giving you the best of what both companies can provide for online payments.
+    p: We have included with our product support for both PayPal.
   - h1: Ad Campaigns
     p: You can monetize your social network with our advanced ad campaigns that gives you full control to who can view each specific ad based on a users location, gender and even their age group. Learn more
   - h1: User Based Ads
@@ -544,7 +544,7 @@
   - h1: Easy Management for End Users
     p: Your users can easily manage their subscription purchases and keep track of any past purchases they have made and if they plan on upgrading to another membership level direct from their dashboard.
   - h1: Payment Gateways API
-    p: We have included with our product support for both PayPal and 2checkout giving you the best of what both companies can provide for online payments.
+    p: We have included with our product support for PayPal.
 
 - h1: Custom Fields
   url: custom-fields
