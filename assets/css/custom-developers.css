@@ -1,0 +1,18 @@
+#page-custom-developers #content-holder {
+  padding-bottom: 0px;
+}
+#page-custom-developers #content-holder > .container {
+  width: auto;
+  max-width: none;
+  margin: 0px;
+  padding: 0px;
+}
+#page-custom-developers .mobile-application img {
+  max-width: 100%;
+}
+#page-custom-developers .code-icons {
+  text-align: center;
+}
+#page-custom-developers .code-icons i {
+  font-size: 200px;
+}
