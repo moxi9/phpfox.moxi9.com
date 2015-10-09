@@ -51,6 +51,42 @@ $(document).ready(function(){
 */
 
 function siteReady() {
+
+	if ($('#contact-us-form').length) {
+		$('#contact-us-form').submit(function() {
+			var t = $(this), errors = '';
+
+			t.find('.alert-warning').remove();
+			if (t.find('input[name="email"]').val().length <= 0) {
+				errors += '<div class="alert-danger">Provide your email.</div>';
+			}
+
+			if (t.find('input[name="name"]').val().length <= 0) {
+				errors += '<div class="alert-danger">Provide your name.</div>';
+			}
+
+			if (t.find('textarea').val().length <= 0) {
+				errors += '<div class="alert-danger">Provide how we can help you.</div>';
+			}
+
+			if (!errors) {
+				var icon = t.parent().find('i');
+				t.hide();
+				icon.removeClass('hide');
+				setTimeout(function() {
+					icon.addClass('hide');
+					icon.before('<div class="alert-success" style="padding:20px; font-size:16px;">Thanks for getting in touch with us!</div>');
+				}, 1000);
+
+				return true;
+			}
+
+			t.prepend(errors);
+
+			return false;
+		});
+	}
+
 	if ($('#page-index').length && !$('#page-index').hasClass('index-is-built')) {
 		$('#page-index').addClass('index-is-built');
 		$.ajax({
