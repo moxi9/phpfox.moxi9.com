@@ -3,11 +3,19 @@
 @import "less/mixins";
 
 #page-about-us {
+
 	#content-holder {
 		padding-bottom:0px;
 	}
 
 	.management {
+
+		.img-circle {
+			max-width:80px;
+			max-height:80px;
+			margin-bottom:5px;
+		}
+
 		color:lighten(#808080, 5%) !important;
 
 		h1 {
@@ -16,7 +24,6 @@
 		}
 
 		.panel {
-			height:185px;
 			border:1px lighten(#dfdfdf, 5%) solid;
 		}
 
@@ -28,9 +35,7 @@
 			position:relative;
 
 			.position {
-				position:absolute;
-				right:10px;
-				top:15px;
+				padding:5px 0px;
 				font-size:12px;
 				color:lighten(#808080, 25%) !important;
 				font-weight:400;
@@ -56,19 +61,14 @@
 	}
 
 	#about-us {
-		.row {
-
-		}
 
 		.col-md-4, .col-md-8, .col-md-6, .col-md-12 {
-			height:300px;
+			/*height:300px;*/
 			position:relative;
 			text-align:center;
-			/*background:@theme-primary;*/
 			padding-top:0px !important;
 
 			h3 {
-				/*color:#fff !important;*/
 				padding-top:30px !important;
 			}
 		}
@@ -76,9 +76,6 @@
 		.col-md-6:nth-of-type(2), .col-md-12 {
 			background:#fff;
 
-			h3 {
-				/*color:#222 !important;*/
-			}
 		}
 
 		p {
