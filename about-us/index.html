@@ -30,8 +30,8 @@ custom_css: about-us.css
 			<h1>Management</h1>
 			<div class="row">
 				{% for manager in site.data.managers %}
-					<div class="col-md-4">
-						<div class="panel">
+					<div class="col-md-6">
+						<div class="panel text-center">
 							<div class="panel-title">
 								{{ manager.name }}
 								<div class="position">
@@ -39,14 +39,8 @@ custom_css: about-us.css
 								</div>
 							</div>
 							<div class="panel-body">
-								<div class="row">
-									<div class="col-md-4">
-										<img src="/assets/img/{{ manager.image }}" class="img-responsive img-circle">
-									</div>
-									<div class="col-md-8">
-										{{ manager.info }}
-									</div>
-								</div>
+								<img src="/assets/img/{{ manager.image }}" class="img-circle">
+								<p>{{ manager.info }}</p>
 							</div>
 						</div>
 					</div>
