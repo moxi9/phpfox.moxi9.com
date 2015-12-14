@@ -1690,3 +1690,22 @@ i.the-spin {
   background: rgba(0, 0, 0, 0.5);
   padding: 5px;
 }
+#get-started .container > .row h1 {
+  max-width: 700px;
+  margin: auto;
+}
+#get-started {
+  min-height: 0;
+  height: 480px;
+}
+#get-started .container > .row {
+  bottom: auto;
+  top: 160px;
+}
+.cbp-af-header {
+  background: rgba(0, 0, 0, 0.4);
+}
+#get-started .container > .row h2 {
+  font-size: 18px;
+  color: #a4a4a4 !important;
+}

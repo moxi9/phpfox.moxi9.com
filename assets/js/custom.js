@@ -282,6 +282,8 @@ function init() {
 
 function fullScreenContainer() {
 	    var changeIt = function() {
+		    return;
+
 		    var screenHeight = $(window).height();
 		    if ($(window).width() <= 800) {
 			    return;
